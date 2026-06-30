@@ -26,7 +26,7 @@
     "description": "Expert aesthetics, dermatology, skin care & laser treatments in Salmiya, Kuwait.",
     "address": { "@type": "PostalAddress", "addressLocality": "Salmiya", "addressCountry": "KW" },
     "telephone": "+96551315007",
-    "url": "https://al-hilal-clinic.vercel.app",
+    "url": "https://alhilalclinickw.vercel.app",
     "priceRange": "$$",
     "medicalSpecialty": ["Dermatology", "AestheticMedicine", "LaserTreatment"]
   }
@@ -66,7 +66,8 @@
           <!-- MEGA MENU -->
           <div class="mega-menu" id="megaMenu">
             <div class="mega-menu-left">
-              <button class="active" data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button class="active" data-panel="all"><span data-i18n="menu.all">All Treatments</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
@@ -164,10 +165,12 @@
                 <ul>
                   <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
                   <li><hr class="services-divider"></li>
-                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
-                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
-                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
-                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="serv.injectables">Injectable Aesthetics</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="serv.laser">Laser Treatments</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.dermatology">Medical Dermatology</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.skinRejuv">Skin Rejuvenation</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="serv.bodyContour">Body Contouring</a></li>
+                  <li><a href="/#contact" data-i18n="serv.consultation">General Consultations</a></li>
                 </ul>
               </div>
             </div>
@@ -203,9 +206,6 @@
         <a href="https://wa.me/96551315007" class="btn btn-outline" target="_blank" rel="noopener">
           <i class="fab fa-whatsapp"></i> <span data-i18n="hero.whatsapp">WhatsApp Us</span>
         </a>
-      </div>
-      <div class="hero-phone" data-aos="fade-up" data-aos-delay="500">
-        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
       </div>
     </div>
   </section>
@@ -335,7 +335,7 @@
       </div>
       <div class="treatments-grid">
         <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="100">
-          <div class="treatment-img"><img src="/assets/images/treatment-botox.jpg" alt="Botox & Dysport"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-img"><img src="/assets/images/injection.jpg" alt="Botox & Dysport"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.botox">Botox &amp; Dysport</h3>
             <p data-i18n="treat.botox.desc">Expert wrinkle reduction with Botox and Dysport. Smooth fine lines, crow's feet, forehead wrinkles, and frown lines for a refreshed, natural look.</p>
@@ -343,7 +343,7 @@
           </div>
         </div>
         <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="150">
-          <div class="treatment-img"><img src="/assets/images/treatment-facial.jpg" alt="Dermal Fillers"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-img"><img src="/assets/images/dermal-filler.jpg" alt="Dermal Fillers"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.fillers">Dermal Fillers</h3>
             <p data-i18n="treat.fillers.desc">Restore volume, enhance contours, and rejuvenate your appearance with premium dermal fillers for lips, cheeks, chin, and more.</p>
@@ -351,7 +351,7 @@
           </div>
         </div>
         <div class="treatment-card" data-category="laser-hair" data-aos="fade-up" data-aos-delay="200">
-          <div class="treatment-img"><img src="/assets/images/treatment-laser.jpg" alt="Laser Hair Removal"><div class="treatment-cat-label" data-i18n="menu.laserHair">Laser Hair Removal</div></div>
+          <div class="treatment-img"><img src="/assets/images/laser-hair-legs.jpg" alt="Laser Hair Removal"><div class="treatment-cat-label" data-i18n="menu.laserHair">Laser Hair Removal</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.laserHair">Laser Hair Removal</h3>
             <p data-i18n="treat.laserHair.desc">Permanent hair reduction using advanced laser technology. Safe, effective, suitable for all skin types.</p>
@@ -359,7 +359,7 @@
           </div>
         </div>
         <div class="treatment-card" data-category="radiant-skin" data-aos="fade-up" data-aos-delay="250">
-          <div class="treatment-img"><img src="/assets/images/treatment-skin.jpg" alt="Chemical Peels"><div class="treatment-cat-label" data-i18n="menu.radiantSkin">Radiant Skin</div></div>
+          <div class="treatment-img"><img src="/assets/images/clay-mask.jpg" alt="Chemical Peels"><div class="treatment-cat-label" data-i18n="menu.radiantSkin">Radiant Skin</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.chemicalPeels">Chemical Peels &amp; Facials</h3>
             <p data-i18n="treat.chemicalPeels.desc">Professional-grade chemical peels and advanced facial treatments for radiant, healthy skin.</p>
@@ -367,7 +367,7 @@
           </div>
         </div>
         <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="300">
-          <div class="treatment-img"><img src="/assets/images/treatment-facial.jpg" alt="PRP Therapy"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-img"><img src="/assets/images/dermal-filler.jpg" alt="PRP Therapy"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.prpMicro">PRP &amp; Microneedling</h3>
             <p data-i18n="treat.prpMicro.desc">Platelet-Rich Plasma therapy and advanced microneedling for natural collagen stimulation and skin rejuvenation.</p>
@@ -375,7 +375,7 @@
           </div>
         </div>
         <div class="treatment-card" data-category="body-contouring" data-aos="fade-up" data-aos-delay="350">
-          <div class="treatment-img"><img src="/assets/images/treatment-botox.jpg" alt="Body Contouring"><div class="treatment-cat-label" data-i18n="menu.bodyContouring">Body Contouring</div></div>
+          <div class="treatment-img"><img src="/assets/images/injection.jpg" alt="Body Contouring"><div class="treatment-cat-label" data-i18n="menu.bodyContouring">Body Contouring</div></div>
           <div class="treatment-info">
             <h3 data-i18n="treat.bodyContour">Body Contouring</h3>
             <p data-i18n="treat.bodyContour.desc">Non-invasive body contouring and fat reduction treatments for a more sculpted physique.</p>
@@ -479,14 +479,14 @@
         <button class="filter-btn" data-filter="skin" data-i18n="filter.skin">Skin</button>
       </div>
       <div class="gallery-grid" data-aos="fade-up">
-        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/treatment-botox.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.botox">Forehead Botox</div></div></div>
-        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/treatment-facial.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.fillers">Lip Fillers</div></div></div>
-        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/treatment-laser.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.laser">Laser Hair Removal</div></div></div>
-        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/treatment-skin.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.skin">Acne Treatment</div></div></div>
-        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/treatment-botox.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.jawline">Jawline Definition</div></div></div>
-        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/treatment-facial.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.neck">Neck Botox</div></div></div>
-        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/treatment-skin.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.pigmentation">Pigmentation Correction</div></div></div>
-        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/treatment-laser.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.rejuvenation">Skin Rejuvenation</div></div></div>
+        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/injection.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.botox">Forehead Botox</div></div></div>
+        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/dermal-filler.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.fillers">Lip Fillers</div></div></div>
+        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/laser-hair-legs.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.laser">Laser Hair Removal</div></div></div>
+        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/clay-mask.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.skin">Acne Treatment</div></div></div>
+        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/injection.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.jawline">Jawline Definition</div></div></div>
+        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/dermal-filler.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.neck">Neck Botox</div></div></div>
+        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/clay-mask.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.pigmentation">Pigmentation Correction</div></div></div>
+        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/laser-hair-legs.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.rejuvenation">Skin Rejuvenation</div></div></div>
       </div>
     </div>
   </section>

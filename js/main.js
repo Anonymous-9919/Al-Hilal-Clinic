@@ -20,9 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-        document.querySelectorAll('.mega-menu').forEach(m => m.classList.remove('active'));
+        if (!link.closest('.menu-trigger')) {
+          navToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          document.querySelectorAll('.mega-menu').forEach(m => m.classList.remove('active'));
+        }
       });
     });
   }
@@ -38,16 +40,70 @@ document.addEventListener('DOMContentLoaded', () => {
         mega.classList.toggle('active');
       });
     }
-    // Panel switching
-    const leftBtns = mega.querySelectorAll('.mega-menu-left button');
+    // Panel switching with smooth animations
+    const leftCats = mega.querySelectorAll('.mega-menu-left button');
     const panels = mega.querySelectorAll('.mega-panel');
-    leftBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        leftBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        panels.forEach(p => p.classList.remove('active'));
-        const panel = mega.querySelector(`.mega-panel[data-panel="${btn.dataset.panel}"]`);
-        if (panel) panel.classList.add('active');
+    const rightPanel = mega.querySelector('.mega-menu-right');
+    let panelTimeout = null;
+
+    function showCategory(panelId) {
+      if (panelTimeout) return;
+
+      if (panelId === 'all') {
+        rightPanel.classList.remove('category-mode');
+        panels.forEach(p => {
+          p.classList.remove('panel-leave', 'panel-enter', 'panel-active', 'panel-hidden');
+          p.style.display = '';
+          p.style.opacity = '';
+          p.style.transform = '';
+        });
+        return;
+      }
+
+      const target = mega.querySelector(`.mega-panel[data-panel="${panelId}"]`);
+      if (!target) return;
+
+      panelTimeout = true;
+      rightPanel.classList.add('category-mode');
+
+      // Fade out all panels
+      panels.forEach(p => {
+        p.classList.remove('panel-active', 'panel-hidden');
+        p.style.display = '';
+        p.style.opacity = '';
+        p.style.transform = '';
+        p.classList.add('panel-leave');
+      });
+
+      // After fade-out, hide all and fade in target
+      setTimeout(() => {
+        panels.forEach(p => {
+          p.classList.remove('panel-leave');
+          p.classList.add('panel-hidden');
+        });
+
+        target.classList.remove('panel-hidden');
+        target.style.display = '';
+        target.classList.add('panel-enter');
+
+        target.offsetHeight;
+        target.classList.remove('panel-enter');
+        target.classList.add('panel-active');
+
+        setTimeout(() => {
+          panelTimeout = null;
+        }, 400);
+      }, 200);
+    }
+
+    // Show all panels by default
+    panels.forEach(p => p.classList.add('panel-active'));
+
+    leftCats.forEach(cat => {
+      cat.addEventListener('click', () => {
+        leftCats.forEach(c => c.classList.remove('active'));
+        cat.classList.add('active');
+        showCategory(cat.dataset.panel);
       });
     });
   });
@@ -158,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'menu.radiantSkin': 'Radiant Skin',
     'menu.bodyContouring': 'Body Contouring',
     'menu.laserHair': 'Laser Hair Removal',
+    'menu.all': 'All Treatments',
     'hero.badge': 'Salmiya, Kuwait',
     'hero.sub': 'Advanced dermatology, aesthetic medicine & laser treatments in the heart of Salmiya.<br>Your journey to radiant, healthy skin begins here.',
     'hero.cta1': 'Book Appointment',
@@ -648,6 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'menu.radiantSkin': 'البشرة المشعة',
     'menu.bodyContouring': 'تنحيف الجسم',
     'menu.laserHair': 'إزالة الشعر بالليزر',
+    'menu.all': 'جميع العلاجات',
     'hero.badge': 'السالمية، الكويت',
     'hero.sub': 'طب جلدية متقدم وعلاجات تجميلية وليزر في قلب السالمية.<br>رحلتك لبشرة مشرقة وصحية تبدأ هنا.',
     'hero.cta1': 'احجز موعد',

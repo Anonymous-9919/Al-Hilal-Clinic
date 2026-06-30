@@ -1,795 +1,798 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Face &amp; Skin Treatments | Al Hilal International Clinic – Salmiya, Kuwait</title>
-  <meta name="description" content="Explore our comprehensive Face & Skin treatments at Al Hilal International Clinic in Salmiya, Kuwait. Botox, fillers, skin boosters, PRP, microneedling and more.">
-  <meta property="og:title" content="Face & Skin Treatments | Al Hilal International Clinic">
-  <meta property="og:description" content="Expert face and skin treatments in Salmiya, Kuwait. Botox, fillers, skin boosters, PRP, microneedling & advanced aesthetic procedures.">
-  <meta property="og:image" content="/assets/images/logo.jpg">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-bar-left">
-        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="top.location">Salmiya, Kuwait</span></span>
-        <span><i class="fas fa-clock"></i> <span data-i18n="top.hours">Sat–Thu: 10:00 AM – 8:00 PM</span></span>
-      </div>
-      <div class="top-bar-right">
-        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
-        <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="top.whatsapp">WhatsApp</span></a>
-        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic">
-        <span class="nav-logo-text">Al Hilal Clinic</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="/" data-i18n="nav.home">Home</a></li>
-        <li class="menu-trigger">
-          <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
-          <div class="mega-menu" id="megaMenu">
-            <div class="mega-menu-left">
-              <button class="active" data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
-              <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
-              <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
-              <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
-            </div>
-            <div class="mega-menu-right" id="megaPanel">
-              <div class="mega-panel active" data-panel="face-skin">
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Dysport &amp; Botox</a></li>
-                    <li><a href="/treatments/face-skin/masseter-botox.html" data-i18n="treat.masseter">Masseter Botox</a></li>
-                    <li><a href="/treatments/face-skin/skin-booster.html" data-i18n="treat.skinBooster">High Potency Skin Booster</a></li>
-                    <li><a href="/treatments/face-skin/nefertiti-lift.html" data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</a></li>
-                    <li><a href="/treatments/face-skin/hyperhidrosis.html" data-i18n="treat.hyperhidrosis">Hyperhidrosis</a></li>
-                    <li><a href="/treatments/face-skin/eyelid-lifting.html" data-i18n="treat.eyelid">Eyelid Lifting</a></li>
-                    <li><a href="/treatments/face-skin/neck-tightening.html" data-i18n="treat.neckTight">Neck Tightening</a></li>
-                    <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples</a></li>
-                    <li><a href="/treatments/face-skin/nasolabial-folds.html" data-i18n="treat.nasolabial">Nasolabial Folds</a></li>
-                    <li><a href="/treatments/face-skin/radiesse.html" data-i18n="treat.radiesse">Radiesse</a></li>
-                    <li><a href="/treatments/face-skin/nose-reshaping.html" data-i18n="treat.nose">Non-Surgical Nose Reshaping</a></li>
-                    <li><a href="/treatments/face-skin/profhilo.html" data-i18n="treat.profhilo">Profhilo</a></li>
-                    <li><a href="/treatments/face-skin/polynucleotides.html" data-i18n="treat.polynucleotides">Polynucleotides</a></li>
-                    <li><a href="/treatments/face-skin/sculptra.html" data-i18n="treat.sculptra">Sculptra</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</a></li>
-                    <li><a href="/treatments/face-skin/rf-microneedling.html" data-i18n="treat.rfMicro">Radiofrequency Microneedling</a></li>
-                    <li><a href="/treatments/face-skin/double-chin.html" data-i18n="treat.doubleChin">Double Chin</a></li>
-                    <li><a href="/treatments/face-skin/mesotherapy-fat-tone.html" data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</a></li>
-                    <li><a href="/treatments/face-skin/jawline-definition.html" data-i18n="treat.jawline">Jawline Definition</a></li>
-                    <li><a href="/treatments/face-skin/filler-dissolving.html" data-i18n="treat.fillerDissolve">Filler Dissolving</a></li>
-                    <li><a href="/treatments/face-skin/corrective-treatments.html" data-i18n="treat.corrective">Corrective Treatments</a></li>
-                    <li><a href="/treatments/face-skin/skin-tags-moles.html" data-i18n="treat.skinTags">Skin Tags &amp; Moles</a></li>
-                    <li><a href="/treatments/face-skin/prp-concentrate.html" data-i18n="treat.prpConc">PRP Concentrate</a></li>
-                    <li><a href="/treatments/face-skin/hair-loss-diagnostics.html" data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</a></li>
-                    <li><a href="/treatments/face-skin/exosomal-dermapen.html" data-i18n="treat.exosomalDermapen">Exosomal Dermapen</a></li>
-                    <li><a href="/treatments/face-skin/medical-mesotherapy.html" data-i18n="treat.medicalMeso">Medical Mesotherapy</a></li>
-                    <li><a href="/treatments/face-skin/alopecia-areata.html" data-i18n="treat.alopecia">Alopecia Areata</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mega-panel" data-panel="radiant-skin">
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Dermapen</a></li>
-                    <li><a href="/treatments/radiant-skin/hydracool.html" data-i18n="treat.hydracool">HydraCool</a></li>
-                    <li><a href="/treatments/radiant-skin/nanofacial.html" data-i18n="treat.nanofacial">NanoFacial</a></li>
-                    <li><a href="/treatments/radiant-skin/vivace-microneedling.html" data-i18n="treat.vivace">Vivace Microneedling</a></li>
-                    <li><a href="/treatments/radiant-skin/hydrafacial.html" data-i18n="treat.hydrafacial">Microdermabrasion/HydraFacial</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/radiant-skin/exosome.html" data-i18n="treat.exosome">Exosome</a></li>
-                    <li><a href="/treatments/radiant-skin/salmon-dna.html" data-i18n="treat.salmonDna">Salmon DNA</a></li>
-                    <li><a href="/treatments/radiant-skin/carboxy-therapy.html" data-i18n="treat.carboxy">Carboxy Therapy</a></li>
-                    <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mega-panel" data-panel="body-contouring">
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/body-contouring/fat-dissolving.html" data-i18n="treat.fatDissolving">Fat-Dissolving Injections</a></li>
-                    <li><a href="/treatments/body-contouring/btl-exilis.html" data-i18n="treat.btlExilis">BTL Exilis Ultra</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/body-contouring/collagen-stimulators.html" data-i18n="treat.collagenStim">Collagen Stimulators</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mega-panel" data-panel="laser-hair">
-                <div class="mega-col">
-                  <ul>
-                    <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col"></div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="menu-trigger">
-          <a href="#" id="servicesTrigger" data-i18n="nav.services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
-          <div class="mega-menu services-mega" id="servicesMega">
-            <div class="mega-menu-right">
-              <div class="mega-col">
-                <ul>
-                  <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
-                  <li><hr class="services-divider"></li>
-                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
-                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
-                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
-                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
-        <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
-        <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-        <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-      <a href="https://wa.me/96551315007" class="nav-cta" target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp"></i> <span data-i18n="nav.book">Book Now</span>
-      </a>
-    </div>
-  </nav>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-bg" style="background-image:url('/assets/images/hero-bg.jpg');"></div>
-    <div class="page-hero-overlay"></div>
-    <div class="container page-hero-content">
-      <div class="breadcrumb">
-        <a href="/" data-i18n="breadcrumb.home">Home</a> /
-        <a href="/treatments/face-skin.html" data-i18n="breadcrumb.treatments">Treatments</a> /
-        <span data-i18n="breadcrumb.faceSkin">Face &amp; Skin</span>
-      </div>
-      <h1 data-i18n="faceSkin.pageTitle">Face &amp; Skin Treatments</h1>
-      <p data-i18n="faceSkin.pageDesc">Advanced injectables, skin rejuvenation and facial aesthetic treatments tailored to enhance your natural beauty at Al Hilal International Clinic.</p>
-    </div>
-  </section>
-
-  <!-- TREATMENTS LIST -->
-  <section class="treatment-list-page section" style="background:var(--white);">
-    <div class="container">
-
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag" data-i18n="faceSkin.tag">Our Expertise</span>
-        <h2 data-i18n="faceSkin.sectionTitle">Comprehensive Face &amp; Skin Treatments</h2>
-        <p class="section-desc" data-i18n="faceSkin.sectionDesc">Every treatment is performed by our expert medical team using premium products and the latest techniques for natural, lasting results.</p>
-      </div>
-
-      <div class="treatment-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
-
-        <!-- ===== COLUMN 1 ===== -->
-
-        <!-- 1. Botox & Dysport -->
-        <div class="treatment-detail-card" id="botox" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Botox & Dysport" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.botox">Botox &amp; Dysport</h3>
-            <p data-i18n="treat.botox.desc">Botox and Dysport are the world's leading neuromodulator treatments for reducing the appearance of dynamic wrinkles. By temporarily relaxing the underlying facial muscles, these injections smooth moderate to severe frown lines, crow's feet, forehead wrinkles and bunny lines. Results appear within days and last 3–4 months, leaving you with a naturally refreshed and youthful expression. At Al Hilal Clinic, our specialists use precise techniques to ensure subtle, beautiful results every time.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.botox.li1"><span>Forehead lines &amp; frown lines</span></li>
-              <li data-i18n="treat.botox.li2"><span>Crow's feet &amp; under-eye wrinkles</span></li>
-              <li data-i18n="treat.botox.li3"><span>Bunny lines on the nose</span></li>
-              <li data-i18n="treat.botox.li4"><span>Lip lines &amp; gummy smile</span></li>
-              <li data-i18n="treat.botox.li5"><span>Non-surgical brow lift</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 2. Masseter Botox -->
-        <div class="treatment-detail-card" id="masseter" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Masseter Botox" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.masseter">Masseter Botox</h3>
-            <p data-i18n="treat.masseter.desc">Masseter Botox involves targeted injections into the masseter muscles of the jaw to slim the lower face and relieve teeth grinding (bruxism). This popular treatment softens a square jawline, creating a more V-shaped, feminine or balanced facial contour. It also alleviates tension headaches, jaw clenching and TMJ discomfort. The effects develop over 2–4 weeks and typically last 4–6 months.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.masseter.li1"><span>Jaw slimming &amp; V-shape contouring</span></li>
-              <li data-i18n="treat.masseter.li2"><span>Teeth grinding (bruxism) relief</span></li>
-              <li data-i18n="treat.masseter.li3"><span>TMJ pain &amp; tension headaches</span></li>
-              <li data-i18n="treat.masseter.li4"><span>Facial asymmetry correction</span></li>
-              <li data-i18n="treat.masseter.li5"><span>Non-surgical face slimming</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 3. High Potency Skin Booster -->
-        <div class="treatment-detail-card" id="skin-booster" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="High Potency Skin Booster" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.skinBooster">High Potency Skin Booster</h3>
-            <p data-i18n="treat.skinBooster.desc">High Potency Skin Boosters are advanced injectable treatments that deliver a powerful blend of hyaluronic acid, amino acids, vitamins and antioxidants deep into the dermis. Unlike superficial moisturisers, these boosters hydrate the skin from within, stimulating collagen production and improving elasticity. The result is a radiant, plump, dewy complexion with reduced fine lines and improved skin texture. A course of 2–3 sessions is recommended for optimal, long-lasting results.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.skinBooster.li1"><span>Deep hydration &amp; skin plumping</span></li>
-              <li data-i18n="treat.skinBooster.li2"><span>Collagen &amp; elastin stimulation</span></li>
-              <li data-i18n="treat.skinBooster.li3"><span>Fine line &amp; wrinkle reduction</span></li>
-              <li data-i18n="treat.skinBooster.li4"><span>Improved skin texture &amp; radiance</span></li>
-              <li data-i18n="treat.skinBooster.li5"><span>Dull, tired &amp; dehydrated skin</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 4. Nefertiti Lift -->
-        <div class="treatment-detail-card" id="nefertiti" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Nefertiti Lift" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</h3>
-            <p data-i18n="treat.nefertiti.desc">The Nefertiti Lift is a non-surgical neck and jawline rejuvenation technique using strategic Botox injections. By relaxing the platysma bands (the vertical neck muscles) and the depressor muscles pulling down the jaw, the treatment creates a visible lift and tightening effect. It defines the jawline, reduces neck banding and softens marionette lines, giving a more sculpted profile. The procedure takes under 20 minutes with no downtime and results last 3–4 months.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.nefertiti.li1"><span>Platysma band reduction</span></li>
-              <li data-i18n="treat.nefertiti.li2"><span>Jawline definition &amp; lift</span></li>
-              <li data-i18n="treat.nefertiti.li3"><span>Neck tightening &amp; contouring</span></li>
-              <li data-i18n="treat.nefertiti.li4"><span>Marionette line softening</span></li>
-              <li data-i18n="treat.nefertiti.li5"><span>Non-surgical lower face lift</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 5. Hyperhidrosis Treatment -->
-        <div class="treatment-detail-card" id="hyperhidrosis" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Hyperhidrosis Treatment" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.hyperhidrosis">Hyperhidrosis Treatment</h3>
-            <p data-i18n="treat.hyperhidrosis.desc">Hyperhidrosis (excessive sweating) can be effectively treated with Botox injections in the underarms, palms, soles or forehead. Botox blocks the chemical signals that stimulate sweat glands, significantly reducing perspiration in the treated area. The treatment is quick, minimally invasive and provides relief for 6–12 months. Many patients report a life-changing improvement in comfort and confidence after just one session.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.hyperhidrosis.li1"><span>Excessive underarm sweating</span></li>
-              <li data-i18n="treat.hyperhidrosis.li2"><span>Palmar hyperhidrosis (sweaty palms)</span></li>
-              <li data-i18n="treat.hyperhidrosis.li3"><span>Plantar hyperhidrosis (sweaty feet)</span></li>
-              <li data-i18n="treat.hyperhidrosis.li4"><span>Facial blushing &amp; sweating</span></li>
-              <li data-i18n="treat.hyperhidrosis.li5"><span>Long-lasting sweat reduction (6–12 months)</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 6. Eyelid Lifting -->
-        <div class="treatment-detail-card" id="eyelid" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="Eyelid Lifting" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.eyelid">Eyelid Lifting</h3>
-            <p data-i18n="treat.eyelid.desc">Non-surgical eyelid lifting uses targeted Botox injections around the brow and eye area to open up the eyes and create a more alert, youthful appearance. By relaxing the muscles that pull the brows down and the orbicularis oculi, the eyebrows lift subtly and crow's feet are smoothed. The treatment can also address drooping upper eyelids and asymmetry. Results are visible within a week and last 3–4 months with zero downtime.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.eyelid.li1"><span>Drooping upper eyelids</span></li>
-              <li data-i18n="treat.eyelid.li2"><span>Brow ptosis (low brows)</span></li>
-              <li data-i18n="treat.eyelid.li3"><span>Periorbital fine lines &amp; crow's feet</span></li>
-              <li data-i18n="treat.eyelid.li4"><span>Asymmetric eye appearance</span></li>
-              <li data-i18n="treat.eyelid.li5"><span>Tired, heavy-looking eyes</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 7. Neck Tightening -->
-        <div class="treatment-detail-card" id="neck-tightening" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-laser.jpg" alt="Neck Tightening" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.neckTight">Neck Tightening</h3>
-            <p data-i18n="treat.neckTight.desc">Neck tightening treatments combine laser, radiofrequency or injectable therapies to firm and rejuvenate loose, sagging skin on the neck and décolletage. These non-invasive modalities stimulate collagen and elastin remodelling, improving skin laxity and reducing the appearance of horizontal neck lines (tech neck). Patients enjoy a smoother, more contoured neck profile without surgery or extended recovery. A series of sessions is typically recommended for best outcomes.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.neckTight.li1"><span>Loose, sagging neck skin</span></li>
-              <li data-i18n="treat.neckTight.li2"><span>Horizontal neck lines (tech neck)</span></li>
-              <li data-i18n="treat.neckTight.li3"><span>Loss of jawline definition</span></li>
-              <li data-i18n="treat.neckTight.li4"><span>Turkey neck / double chin</span></li>
-              <li data-i18n="treat.neckTight.li5"><span>Non-invasive skin tightening</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 8. Cheeks, Chin, Lips, Temples Fillers -->
-        <div class="treatment-detail-card" id="cheeks" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Dermal Fillers" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples Fillers</h3>
-            <p data-i18n="treat.cheeks.desc">Premium dermal fillers restore lost volume, enhance facial contours and rejuvenate the face at any age. Using hyaluronic acid-based fillers, our specialists can augment cheekbones, define the chin, plump the lips and restore volume to hollow temples. The treatment is customised to your facial anatomy and aesthetic goals, delivering natural-looking enhancement with immediate results. Effects typically last 9–18 months depending on the product used and area treated.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.cheeks.li1"><span>Sunken cheeks &amp; midface volume loss</span></li>
-              <li data-i18n="treat.cheeks.li2"><span>Lip enhancement &amp; definition</span></li>
-              <li data-i18n="treat.cheeks.li3"><span>Chin augmentation &amp; projection</span></li>
-              <li data-i18n="treat.cheeks.li4"><span>Temple hollowing</span></li>
-              <li data-i18n="treat.cheeks.li5"><span>Facial asymmetry correction</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 9. Nasolabial Folds Treatment -->
-        <div class="treatment-detail-card" id="nasolabial" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="Nasolabial Folds Treatment" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.nasolabial">Nasolabial Folds Treatment</h3>
-            <p data-i18n="treat.nasolabial.desc">Nasolabial folds (the lines running from the nose to the corners of the mouth) deepen with age as facial fat pads descend and collagen is lost. Dermal filler injections safely soften these folds by restoring volume and support to the midface. The result is a smoother, more rested appearance without looking overfilled. Our practitioners use gentle techniques and premium fillers to achieve beautiful, lasting correction.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.nasolabial.li1"><span>Deep nasolabial folds (smile lines)</span></li>
-              <li data-i18n="treat.nasolabial.li2"><span>Midface volume loss</span></li>
-              <li data-i18n="treat.nasolabial.li3"><span>Marionette lines</span></li>
-              <li data-i18n="treat.nasolabial.li4"><span>Tired or gaunt facial appearance</span></li>
-              <li data-i18n="treat.nasolabial.li5"><span>Non-surgical midface rejuvenation</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 10. Radiesse -->
-        <div class="treatment-detail-card" id="radiesse" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Radiesse" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.radiesse">Radiesse</h3>
-            <p data-i18n="treat.radiesse.desc">Radiesse is a unique biostimulatory filler made of calcium hydroxylapatite microspheres suspended in a gel carrier. It provides immediate volume correction while stimulating your own collagen production for continued improvement over time. Radiesse is particularly effective for deeper wrinkles, cheek augmentation, jawline contouring and hand rejuvenation. Results last 12–18 months or longer, making it a cost-effective choice for long-term facial rejuvenation.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.radiesse.li1"><span>Deep nasolabial folds &amp; marionette lines</span></li>
-              <li data-i18n="treat.radiesse.li2"><span>Cheek volume &amp; lift</span></li>
-              <li data-i18n="treat.radiesse.li3"><span>Jawline &amp; chin contouring</span></li>
-              <li data-i18n="treat.radiesse.li4"><span>Hand rejuvenation</span></li>
-              <li data-i18n="treat.radiesse.li5"><span>Natural collagen stimulation</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 11. Non-Surgical Nose Reshaping -->
-        <div class="treatment-detail-card" id="nose" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Non-Surgical Nose Reshaping" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.nose">Non-Surgical Nose Reshaping</h3>
-            <p data-i18n="treat.nose.desc">Non-surgical rhinoplasty uses dermal fillers to reshape and refine the nose without surgery or downtime. Fillers can smooth a dorsal hump, lift the nasal tip, correct asymmetry and improve nasal profile. The procedure is performed in under 30 minutes using topical anaesthesia for comfort. Results are immediate and reversible, lasting 12–18 months, making it an ideal option for those exploring nasal aesthetics.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.nose.li1"><span>Dorsal hump camouflage</span></li>
-              <li data-i18n="treat.nose.li2"><span>Nasal tip lift &amp; refinement</span></li>
-              <li data-i18n="treat.nose.li3"><span>Nasal asymmetry correction</span></li>
-              <li data-i18n="treat.nose.li4"><span>Bridge augmentation</span></li>
-              <li data-i18n="treat.nose.li5"><span>Non-surgical profile balancing</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 12. Profhilo -->
-        <div class="treatment-detail-card" id="profhilo" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="Profhilo" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.profhilo">Profhilo</h3>
-            <p data-i18n="treat.profhilo.desc">Profhilo is a revolutionary injectable treatment that combines high-concentration hyaluronic acid with a unique dispersing technology for deep tissue hydration and collagen remodelling. Unlike traditional fillers, Profhilo spreads evenly through the tissue to improve skin laxity, firmness and overall quality. It is especially popular for treating ageing hands, the face, neck and décolletage. Two sessions spaced one month apart deliver outstanding, long-lasting results.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.profhilo.li1"><span>Skin laxity &amp; sagging</span></li>
-              <li data-i18n="treat.profhilo.li2"><span>Dehydrated, dull skin</span></li>
-              <li data-i18n="treat.profhilo.li3"><span>Fine lines &amp; crepey texture</span></li>
-              <li data-i18n="treat.profhilo.li4"><span>Hand rejuvenation</span></li>
-              <li data-i18n="treat.profhilo.li5"><span>Overall skin quality improvement</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 13. Polynucleotides -->
-        <div class="treatment-detail-card" id="polynucleotides" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Polynucleotides" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.polynucleotides">Polynucleotides</h3>
-            <p data-i18n="treat.polynucleotides.desc">Polynucleotide treatments harness the power of purified DNA fragments to stimulate cellular regeneration and tissue repair. These bio-revitalising injections deeply nourish the skin, promoting collagen synthesis, improving hydration and reducing inflammation. Polynucleotides are excellent for treating fine lines, dark circles, acne scars and overall skin ageing. A course of 3 sessions yields progressive improvements in skin tone, texture and firmness.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.polynucleotides.li1"><span>Fine lines &amp; skin ageing</span></li>
-              <li data-i18n="treat.polynucleotides.li2"><span>Under-eye dark circles &amp; hollows</span></li>
-              <li data-i18n="treat.polynucleotides.li3"><span>Acne scars &amp; textural issues</span></li>
-              <li data-i18n="treat.polynucleotides.li4"><span>Dehydrated, damaged skin</span></li>
-              <li data-i18n="treat.polynucleotides.li5"><span>Skin regeneration &amp; repair</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 14. Sculptra -->
-        <div class="treatment-detail-card" id="sculptra" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-laser.jpg" alt="Sculptra" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.sculptra">Sculptra</h3>
-            <p data-i18n="treat.sculptra.desc">Sculptra is a unique biostimulatory injectable made from poly-L-lactic acid that gradually restores facial volume by stimulating your own collagen production. Over a course of 2–3 sessions, Sculptra rebuilds the facial structure from within, correcting deep volume loss in the cheeks, temples, and jawline for a natural, progressive rejuvenation. Results develop over several months and can last more than two years. It is ideal for patients wanting subtle, long-lasting anti-ageing without obvious change.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.sculptra.li1"><span>Age-related facial volume loss</span></li>
-              <li data-i18n="treat.sculptra.li2"><span>Sunken cheeks &amp; temples</span></li>
-              <li data-i18n="treat.sculptra.li3"><span>Nasolabial folds &amp; marionette lines</span></li>
-              <li data-i18n="treat.sculptra.li4"><span>Jawline &amp; chin recontouring</span></li>
-              <li data-i18n="treat.sculptra.li5"><span>Gradual, natural collagen renewal</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- ===== COLUMN 2 ===== -->
-
-        <!-- 1. PRP & Exosome Microneedling -->
-        <div class="treatment-detail-card" id="prp-microneedling" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="PRP & Exosome Microneedling" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</h3>
-            <p data-i18n="treat.prpMicro.desc">PRP (Platelet-Rich Plasma) combined with exosome therapy and microneedling is one of the most powerful regenerative treatments available. Your own blood is processed to concentrate growth factors, then infused into the skin via microneedling along with exosomes — potent signalling molecules that drive cellular repair. This triple-action therapy dramatically improves skin texture, reduces scars and pores, and restores a youthful glow. A course of 3 sessions spaced 4 weeks apart yields transformative results.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.prpMicro.li1"><span>Acne scars &amp; enlarged pores</span></li>
-              <li data-i18n="treat.prpMicro.li2"><span>Fine lines &amp; wrinkles</span></li>
-              <li data-i18n="treat.prpMicro.li3"><span>Dull, uneven skin tone</span></li>
-              <li data-i18n="treat.prpMicro.li4"><span>Stretch marks &amp; scars</span></li>
-              <li data-i18n="treat.prpMicro.li5"><span>Overall skin rejuvenation &amp; collagen induction</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 2. Radiofrequency Microneedling -->
-        <div class="treatment-detail-card" id="rf-microneedling" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Radiofrequency Microneedling" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.rfMicro">Radiofrequency Microneedling</h3>
-            <p data-i18n="treat.rfMicro.desc">Radiofrequency (RF) microneedling combines the collagen-induction power of microneedling with the skin-tightening energy of radiofrequency. Ultra-fine needles penetrate the dermis and deliver controlled RF heat, stimulating deep collagen remodelling while protecting the skin's surface. This technology is highly effective for skin tightening, scar revision, pore refinement and laxity correction. Most patients see noticeable improvement after a single session, with optimal results after 2–3 treatments.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.rfMicro.li1"><span>Skin laxity &amp; sagging</span></li>
-              <li data-i18n="treat.rfMicro.li2"><span>Acne scars &amp; boxcar scars</span></li>
-              <li data-i18n="treat.rfMicro.li3"><span>Enlarged pores &amp; textural issues</span></li>
-              <li data-i18n="treat.rfMicro.li4"><span>Fine lines &amp; jowls</span></li>
-              <li data-i18n="treat.rfMicro.li5"><span>Non-surgical face &amp; neck tightening</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 3. Double Chin Treatment -->
-        <div class="treatment-detail-card" id="double-chin" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-laser.jpg" alt="Double Chin Treatment" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.doubleChin">Double Chin Treatment</h3>
-            <p data-i18n="treat.doubleChin.desc">Submental fat (double chin) can be effectively reduced using non-surgical treatments such as deoxycholic acid injections or laser lipolysis. These targeted therapies break down fat cells under the chin, which are then naturally eliminated by the body. The treatment contours the jawline and profile, creating a more defined and youthful appearance. A series of 2–4 sessions is typically required, with results becoming visible within weeks.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.doubleChin.li1"><span>Submental fat (double chin)</span></li>
-              <li data-i18n="treat.doubleChin.li2"><span>Poor jawline definition</span></li>
-              <li data-i18n="treat.doubleChin.li3"><span>Fullness under the chin</span></li>
-              <li data-i18n="treat.doubleChin.li4"><span>Non-surgical chin contouring</span></li>
-              <li data-i18n="treat.doubleChin.li5"><span>Permanent fat reduction</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 4. Mesotherapy for Fat & Tone -->
-        <div class="treatment-detail-card" id="mesotherapy" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Mesotherapy for Fat & Tone" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</h3>
-            <p data-i18n="treat.meso.desc">Mesotherapy involves micro-injections of a custom blend of vitamins, enzymes, amino acids and lipolytic compounds directly into the mesoderm (middle layer of skin). This treatment targets localised fat deposits, cellulite and skin laxity while simultaneously nourishing and toning the treated area. Commonly treated areas include the face, abdomen, thighs and arms. A course of 4–6 weekly sessions delivers progressive fat reduction and improved skin firmness.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.meso.li1"><span>Localised fat deposits</span></li>
-              <li data-i18n="treat.meso.li2"><span>Cellulite reduction</span></li>
-              <li data-i18n="treat.meso.li3"><span>Skin laxity &amp; poor tone</span></li>
-              <li data-i18n="treat.meso.li4"><span>Facial slimming &amp; contouring</span></li>
-              <li data-i18n="treat.meso.li5"><span>Body sculpting without surgery</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 5. Jawline Definition -->
-        <div class="treatment-detail-card" id="jawline" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="Jawline Definition" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.jawline">Jawline Definition</h3>
-            <p data-i18n="treat.jawline.desc">Jawline definition uses dermal fillers to sculpt and enhance the mandibular contour, creating a sharper, more aesthetically pleasing jawline. By adding structure to the jaw angle and chin, fillers can transform a weak or poorly defined jaw into a strong, balanced feature. This treatment is especially popular among both men and women seeking a more structured lower face. Results are immediate and can last 12–18 months with premium fillers.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.jawline.li1"><span>Weak or undefined jawline</span></li>
-              <li data-i18n="treat.jawline.li2"><span>Lack of chin projection</span></li>
-              <li data-i18n="treat.jawline.li3"><span>Jaw asymmetry</span></li>
-              <li data-i18n="treat.jawline.li4"><span>Age-related jawline laxity</span></li>
-              <li data-i18n="treat.jawline.li5"><span>Non-surgical facial masculinisation / feminisation</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 6. Filler Dissolving -->
-        <div class="treatment-detail-card" id="filler-dissolve" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Filler Dissolving" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.fillerDissolve">Filler Dissolving</h3>
-            <p data-i18n="treat.fillerDissolve.desc">Hyaluronidase injections safely and rapidly dissolve unwanted or overfilled hyaluronic acid fillers. Whether you have lumps, asymmetry, migration or simply changed your mind, filler dissolving provides immediate correction. The enzyme breaks down the filler, restoring your natural appearance within 24–48 hours. This treatment is also used to manage complications such as vascular occlusion, ensuring patient safety at all times.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.fillerDissolve.li1"><span>Overfilled or lumpy areas</span></li>
-              <li data-i18n="treat.fillerDissolve.li2"><span>Filler asymmetry or migration</span></li>
-              <li data-i18n="treat.fillerDissolve.li3"><span>Tyndall effect (blueish tint)</span></li>
-              <li data-i18n="treat.fillerDissolve.li4"><span>Unsatisfactory filler results</span></li>
-              <li data-i18n="treat.fillerDissolve.li5"><span>Vascular occlusion emergency treatment</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 7. Corrective Treatments -->
-        <div class="treatment-detail-card" id="corrective" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Corrective Treatments" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.corrective">Corrective Treatments</h3>
-            <p data-i18n="treat.corrective.desc">Our corrective treatments address a wide range of skin concerns including hyperpigmentation, melasma, post-inflammatory erythema, sun damage and uneven texture. Using a combination of medical-grade peels, lasers, topical therapies and advanced skincare, we create a personalised plan to restore your skin's health and clarity. Each protocol is tailored to your skin type and condition for safe, effective results. Ongoing support and follow-up ensure long-term improvement.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.corrective.li1"><span>Hyperpigmentation &amp; melasma</span></li>
-              <li data-i18n="treat.corrective.li2"><span>Post-inflammatory erythema (redness)</span></li>
-              <li data-i18n="treat.corrective.li3"><span>Sun spots &amp; photoageing</span></li>
-              <li data-i18n="treat.corrective.li4"><span>Uneven skin tone &amp; texture</span></li>
-              <li data-i18n="treat.corrective.li5"><span>Medical-grade corrective skincare plans</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 8. Skin Tags & Moles Removal -->
-        <div class="treatment-detail-card" id="skin-tags" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-laser.jpg" alt="Skin Tags & Moles Removal" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.skinTags">Skin Tags &amp; Moles Removal</h3>
-            <p data-i18n="treat.skinTags.desc">We offer safe, effective removal of skin tags, moles, warts, seborrheic keratoses and other benign skin lesions using laser, cryotherapy or surgical excision. All procedures are performed by our medical team with precision and minimal discomfort. Lesions are removed in a single session with virtually no downtime and excellent cosmetic outcomes. Every lesion is carefully assessed to ensure safety and appropriate treatment selection.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.skinTags.li1"><span>Skin tags (acrochordons)</span></li>
-              <li data-i18n="treat.skinTags.li2"><span>Benign moles &amp; naevi</span></li>
-              <li data-i18n="treat.skinTags.li3"><span>Seborrheic keratoses</span></li>
-              <li data-i18n="treat.skinTags.li4"><span>Warts &amp; papillomas</span></li>
-              <li data-i18n="treat.skinTags.li5"><span>Minimal scarring &amp; fast healing</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 9. PRP Concentrate -->
-        <div class="treatment-detail-card" id="prp-concentrate" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="PRP Concentrate" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.prpConc">PRP Concentrate</h3>
-            <p data-i18n="treat.prpConc.desc">PRP (Platelet-Rich Plasma) Concentrate therapy uses your own blood's growth factors to stimulate healing, collagen production and tissue regeneration. After a simple blood draw, the platelet-rich plasma is separated and injected into targeted areas of the face, scalp or body. PRP is highly effective for facial rejuvenation, hair restoration and scar improvement. The treatment is natural, safe and biocompatible with no risk of allergic reaction.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.prpConc.li1"><span>Facial rejuvenation (vampire facial)</span></li>
-              <li data-i18n="treat.prpConc.li2"><span>Hair loss &amp; thinning</span></li>
-              <li data-i18n="treat.prpConc.li3"><span>Acne scars &amp; wound healing</span></li>
-              <li data-i18n="treat.prpConc.li4"><span>Under-eye dark circles &amp; hollows</span></li>
-              <li data-i18n="treat.prpConc.li5"><span>Natural collagen induction</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 10. Lab Diagnostics for Hair Loss -->
-        <div class="treatment-detail-card" id="hair-lab" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-botox.jpg" alt="Lab Diagnostics for Hair Loss" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</h3>
-            <p data-i18n="treat.hairLab.desc">Comprehensive laboratory diagnostics identify the root causes of hair loss, enabling targeted, effective treatment. Our panel includes hormone profiling (DHT, oestrogen, thyroid), nutritional deficiency screening (iron, ferritin, vitamin D, zinc), and inflammatory markers. Results are interpreted by our specialists who create a personalised treatment plan addressing your specific hair loss type. This evidence-based approach ensures the best possible outcomes for hair restoration.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.hairLab.li1"><span>Androgenetic alopecia (pattern baldness)</span></li>
-              <li data-i18n="treat.hairLab.li2"><span>Telogen effluvium (stress-related shedding)</span></li>
-              <li data-i18n="treat.hairLab.li3"><span>Nutritional deficiency hair loss</span></li>
-              <li data-i18n="treat.hairLab.li4"><span>Hormonal imbalance (thyroid, DHT)</span></li>
-              <li data-i18n="treat.hairLab.li5"><span>Personalised treatment plans</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 11. Exosomal Dermapen -->
-        <div class="treatment-detail-card" id="exosomal-dermapen" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-skin.jpg" alt="Exosomal Dermapen" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.exosomalDermapen">Exosomal Dermapen</h3>
-            <p data-i18n="treat.exosomalDermapen.desc">Exosomal Dermapen combines medical-grade microneedling with topical application of exosome-rich serum for advanced skin regeneration. Exosomes are nano-sized vesicles packed with growth factors, cytokines and signalling proteins that communicate with skin cells to accelerate repair and rejuvenation. This synergistic treatment dramatically improves scar appearance, reduces pigmentation, tightens pores and restores skin radiance. A course of 3 sessions yields exceptional, cumulative results.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.exosomalDermapen.li1"><span>Acne scars &amp; surgical scars</span></li>
-              <li data-i18n="treat.exosomalDermapen.li2"><span>Pigmentation &amp; sun damage</span></li>
-              <li data-i18n="treat.exosomalDermapen.li3"><span>Enlarged pores &amp; textural irregularity</span></li>
-              <li data-i18n="treat.exosomalDermapen.li4"><span>Fine lines &amp; skin laxity</span></li>
-              <li data-i18n="treat.exosomalDermapen.li5"><span>Accelerated skin repair &amp; regeneration</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 12. Medical Mesotherapy -->
-        <div class="treatment-detail-card" id="medical-meso" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-facial.jpg" alt="Medical Mesotherapy" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.medicalMeso">Medical Mesotherapy</h3>
-            <p data-i18n="treat.medicalMeso.desc">Medical mesotherapy is a regulated, prescription-based injectable treatment that delivers active ingredients directly to the target tissue. Unlike cosmetic mesotherapy, our medical-grade formulations contain precisely dosed vitamins, minerals, amino acids and hyaluronic acid for therapeutic skin restoration. It is indicated for dehydrated, ageing, pigmented or compromised skin and is often used alongside other aesthetic procedures. Treatments are tailored to each patient's clinical needs.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.medicalMeso.li1"><span>Severely dehydrated skin</span></li>
-              <li data-i18n="treat.medicalMeso.li2"><span>Ageing &amp; photoaged skin</span></li>
-              <li data-i18n="treat.medicalMeso.li3"><span>Post-procedure skin recovery</span></li>
-              <li data-i18n="treat.medicalMeso.li4"><span>Pigmentation &amp; dullness</span></li>
-              <li data-i18n="treat.medicalMeso.li5"><span>Prescription-strength revitalisation</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-        <!-- 13. Alopecia Areata Treatment -->
-        <div class="treatment-detail-card" id="alopecia" data-aos="fade-up">
-          <div class="td-img">
-            <img src="/assets/images/treatment-laser.jpg" alt="Alopecia Areata Treatment" loading="lazy">
-          </div>
-          <div class="td-body">
-            <h3 data-i18n="treat.alopecia">Alopecia Areata Treatment</h3>
-            <p data-i18n="treat.alopecia.desc">Alopecia areata is an autoimmune condition causing patchy hair loss that can affect the scalp, eyebrows, beard and body. Our clinic offers advanced treatment options including topical immunotherapy, corticosteroid injections, PRP therapy and JAK inhibitors to suppress the immune attack and promote hair regrowth. Each treatment plan is individualised based on the severity and pattern of hair loss. Early intervention offers the best prognosis for full recovery.</p>
-            <ul class="td-list">
-              <li data-i18n="treat.alopecia.li1"><span>Patchy scalp hair loss</span></li>
-              <li data-i18n="treat.alopecia.li2"><span>Eyebrow &amp; beard alopecia</span></li>
-              <li data-i18n="treat.alopecia.li3"><span>Totalis &amp; universalis forms</span></li>
-              <li data-i18n="treat.alopecia.li4"><span>Autoimmune-related hair shedding</span></li>
-              <li data-i18n="treat.alopecia.li5"><span>Medical &amp; regenerative treatment options</span></li>
-            </ul>
-            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- BOOKING CTA -->
-      <div style="text-align:center;margin-top:60px;" data-aos="fade-up">
-        <p style="font-size:1.05rem;color:var(--text-light);margin-bottom:20px;" data-i18n="faceSkin.bookingText">Not sure which treatment is right for you? Book a consultation with our specialists today.</p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-          <a href="https://wa.me/96551315007" class="btn btn-primary" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> <span data-i18n="faceSkin.bookingWA">Book via WhatsApp</span>
-          </a>
-          <a href="/#contact" class="btn btn-outline" style="background:var(--green);color:var(--white);border-color:var(--green);">
-            <i class="fas fa-calendar-check"></i> <span data-i18n="faceSkin.bookingForm">Book Appointment</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-brand">
-          <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic" class="footer-logo">
-          <p data-i18n="footer.desc">Al Hilal International Clinic is a premier dermatology and aesthetic medicine center in Salmiya, Kuwait, offering advanced, safe, and personalized skin and cosmetic treatments.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/alhilal.international_clinic/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/96551315007" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.quick">Quick Links</h4>
-          <ul>
-            <li><a href="/" data-i18n="nav.home">Home</a></li>
-            <li><a href="/#about" data-i18n="nav.about">About</a></li>
-            <li><a href="/services.html" data-i18n="nav.services">Services</a></li>
-            <li><a href="/treatments/face-skin.html" data-i18n="nav.treatments">Treatments</a></li>
-            <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
-            <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
-            <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-            <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.treatments">Treatments</h4>
-          <ul>
-            <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Botox &amp; Dysport</a></li>
-            <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.fillers">Dermal Fillers</a></li>
-            <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
-            <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP Therapy</a></li>
-            <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
-            <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Microneedling</a></li>
-            <li><a href="/treatments/radiant-skin.html" data-i18n="treat.skinRejuv">Skin Rejuvenation</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 data-i18n="footer.contact">Contact</h4>
-          <ul class="footer-contact">
-            <li><i class="fas fa-phone-alt"></i> <a href="tel:+96551315007">+965 51315007</a></li>
-            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/96551315007">WhatsApp</a></li>
-            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location.text">Salmiya, Kuwait</span></li>
-            <li><i class="fas fa-clock"></i> <span data-i18n="contact.hours.short">Sat–Thu: 10 AM – 8 PM</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Al Hilal International Clinic. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
-        <p class="footer-license">MOH License No: 1337416</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/96551315007" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- SCRIPTS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face &amp; Skin Treatments | Al Hilal International Clinic – Salmiya, Kuwait</title>
+  <meta name="description" content="Explore our comprehensive Face & Skin treatments at Al Hilal International Clinic in Salmiya, Kuwait. Botox, fillers, skin boosters, PRP, microneedling and more.">
+  <meta property="og:title" content="Face & Skin Treatments | Al Hilal International Clinic">
+  <meta property="og:description" content="Expert face and skin treatments in Salmiya, Kuwait. Botox, fillers, skin boosters, PRP, microneedling & advanced aesthetic procedures.">
+  <meta property="og:image" content="/assets/images/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="top.location">Salmiya, Kuwait</span></span>
+        <span><i class="fas fa-clock"></i> <span data-i18n="top.hours">Sat–Thu: 10:00 AM – 8:00 PM</span></span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
+        <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="top.whatsapp">WhatsApp</span></a>
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic">
+        <span class="nav-logo-text">Al Hilal Clinic</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" data-i18n="nav.home">Home</a></li>
+        <li class="menu-trigger">
+          <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-menu-left">
+              <button class="active" data-panel="all"><span data-i18n="menu.all">All Treatments</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+            </div>
+            <div class="mega-menu-right" id="megaPanel">
+              <div class="mega-panel active" data-panel="face-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Dysport &amp; Botox</a></li>
+                    <li><a href="/treatments/face-skin/masseter-botox.html" data-i18n="treat.masseter">Masseter Botox</a></li>
+                    <li><a href="/treatments/face-skin/skin-booster.html" data-i18n="treat.skinBooster">High Potency Skin Booster</a></li>
+                    <li><a href="/treatments/face-skin/nefertiti-lift.html" data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</a></li>
+                    <li><a href="/treatments/face-skin/hyperhidrosis.html" data-i18n="treat.hyperhidrosis">Hyperhidrosis</a></li>
+                    <li><a href="/treatments/face-skin/eyelid-lifting.html" data-i18n="treat.eyelid">Eyelid Lifting</a></li>
+                    <li><a href="/treatments/face-skin/neck-tightening.html" data-i18n="treat.neckTight">Neck Tightening</a></li>
+                    <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples</a></li>
+                    <li><a href="/treatments/face-skin/nasolabial-folds.html" data-i18n="treat.nasolabial">Nasolabial Folds</a></li>
+                    <li><a href="/treatments/face-skin/radiesse.html" data-i18n="treat.radiesse">Radiesse</a></li>
+                    <li><a href="/treatments/face-skin/nose-reshaping.html" data-i18n="treat.nose">Non-Surgical Nose Reshaping</a></li>
+                    <li><a href="/treatments/face-skin/profhilo.html" data-i18n="treat.profhilo">Profhilo</a></li>
+                    <li><a href="/treatments/face-skin/polynucleotides.html" data-i18n="treat.polynucleotides">Polynucleotides</a></li>
+                    <li><a href="/treatments/face-skin/sculptra.html" data-i18n="treat.sculptra">Sculptra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/rf-microneedling.html" data-i18n="treat.rfMicro">Radiofrequency Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/double-chin.html" data-i18n="treat.doubleChin">Double Chin</a></li>
+                    <li><a href="/treatments/face-skin/mesotherapy-fat-tone.html" data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</a></li>
+                    <li><a href="/treatments/face-skin/jawline-definition.html" data-i18n="treat.jawline">Jawline Definition</a></li>
+                    <li><a href="/treatments/face-skin/filler-dissolving.html" data-i18n="treat.fillerDissolve">Filler Dissolving</a></li>
+                    <li><a href="/treatments/face-skin/corrective-treatments.html" data-i18n="treat.corrective">Corrective Treatments</a></li>
+                    <li><a href="/treatments/face-skin/skin-tags-moles.html" data-i18n="treat.skinTags">Skin Tags &amp; Moles</a></li>
+                    <li><a href="/treatments/face-skin/prp-concentrate.html" data-i18n="treat.prpConc">PRP Concentrate</a></li>
+                    <li><a href="/treatments/face-skin/hair-loss-diagnostics.html" data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</a></li>
+                    <li><a href="/treatments/face-skin/exosomal-dermapen.html" data-i18n="treat.exosomalDermapen">Exosomal Dermapen</a></li>
+                    <li><a href="/treatments/face-skin/medical-mesotherapy.html" data-i18n="treat.medicalMeso">Medical Mesotherapy</a></li>
+                    <li><a href="/treatments/face-skin/alopecia-areata.html" data-i18n="treat.alopecia">Alopecia Areata</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel" data-panel="radiant-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Dermapen</a></li>
+                    <li><a href="/treatments/radiant-skin/hydracool.html" data-i18n="treat.hydracool">HydraCool</a></li>
+                    <li><a href="/treatments/radiant-skin/nanofacial.html" data-i18n="treat.nanofacial">NanoFacial</a></li>
+                    <li><a href="/treatments/radiant-skin/vivace-microneedling.html" data-i18n="treat.vivace">Vivace Microneedling</a></li>
+                    <li><a href="/treatments/radiant-skin/hydrafacial.html" data-i18n="treat.hydrafacial">Microdermabrasion/HydraFacial</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/exosome.html" data-i18n="treat.exosome">Exosome</a></li>
+                    <li><a href="/treatments/radiant-skin/salmon-dna.html" data-i18n="treat.salmonDna">Salmon DNA</a></li>
+                    <li><a href="/treatments/radiant-skin/carboxy-therapy.html" data-i18n="treat.carboxy">Carboxy Therapy</a></li>
+                    <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel" data-panel="body-contouring">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/fat-dissolving.html" data-i18n="treat.fatDissolving">Fat-Dissolving Injections</a></li>
+                    <li><a href="/treatments/body-contouring/btl-exilis.html" data-i18n="treat.btlExilis">BTL Exilis Ultra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/collagen-stimulators.html" data-i18n="treat.collagenStim">Collagen Stimulators</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel" data-panel="laser-hair">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-trigger">
+          <a href="#" id="servicesTrigger" data-i18n="nav.services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="mega-menu services-mega" id="servicesMega">
+            <div class="mega-menu-right">
+              <div class="mega-col">
+                <ul>
+                  <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
+                  <li><hr class="services-divider"></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="serv.injectables">Injectable Aesthetics</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="serv.laser">Laser Treatments</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.dermatology">Medical Dermatology</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.skinRejuv">Skin Rejuvenation</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="serv.bodyContour">Body Contouring</a></li>
+                  <li><a href="/#contact" data-i18n="serv.consultation">General Consultations</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+        <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/96551315007" class="nav-cta" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> <span data-i18n="nav.book">Book Now</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('/assets/images/hero-bg.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="/" data-i18n="breadcrumb.home">Home</a> /
+        <a href="/treatments/face-skin.html" data-i18n="breadcrumb.treatments">Treatments</a> /
+        <span data-i18n="breadcrumb.faceSkin">Face &amp; Skin</span>
+      </div>
+      <h1 data-i18n="faceSkin.pageTitle">Face &amp; Skin Treatments</h1>
+      <p data-i18n="faceSkin.pageDesc">Advanced injectables, skin rejuvenation and facial aesthetic treatments tailored to enhance your natural beauty at Al Hilal International Clinic.</p>
+    </div>
+  </section>
+
+  <!-- TREATMENTS LIST -->
+  <section class="treatment-list-page section" style="background:var(--white);">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="faceSkin.tag">Our Expertise</span>
+        <h2 data-i18n="faceSkin.sectionTitle">Comprehensive Face &amp; Skin Treatments</h2>
+        <p class="section-desc" data-i18n="faceSkin.sectionDesc">Every treatment is performed by our expert medical team using premium products and the latest techniques for natural, lasting results.</p>
+      </div>
+
+      <div class="treatment-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+
+        <!-- ===== COLUMN 1 ===== -->
+
+        <!-- 1. Botox & Dysport -->
+        <div class="treatment-detail-card" id="botox" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Botox & Dysport" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.botox">Botox &amp; Dysport</h3>
+            <p data-i18n="treat.botox.desc">Botox and Dysport are the world's leading neuromodulator treatments for reducing the appearance of dynamic wrinkles. By temporarily relaxing the underlying facial muscles, these injections smooth moderate to severe frown lines, crow's feet, forehead wrinkles and bunny lines. Results appear within days and last 3–4 months, leaving you with a naturally refreshed and youthful expression. At Al Hilal Clinic, our specialists use precise techniques to ensure subtle, beautiful results every time.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.botox.li1"><span>Forehead lines &amp; frown lines</span></li>
+              <li data-i18n="treat.botox.li2"><span>Crow's feet &amp; under-eye wrinkles</span></li>
+              <li data-i18n="treat.botox.li3"><span>Bunny lines on the nose</span></li>
+              <li data-i18n="treat.botox.li4"><span>Lip lines &amp; gummy smile</span></li>
+              <li data-i18n="treat.botox.li5"><span>Non-surgical brow lift</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 2. Masseter Botox -->
+        <div class="treatment-detail-card" id="masseter" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Masseter Botox" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.masseter">Masseter Botox</h3>
+            <p data-i18n="treat.masseter.desc">Masseter Botox involves targeted injections into the masseter muscles of the jaw to slim the lower face and relieve teeth grinding (bruxism). This popular treatment softens a square jawline, creating a more V-shaped, feminine or balanced facial contour. It also alleviates tension headaches, jaw clenching and TMJ discomfort. The effects develop over 2–4 weeks and typically last 4–6 months.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.masseter.li1"><span>Jaw slimming &amp; V-shape contouring</span></li>
+              <li data-i18n="treat.masseter.li2"><span>Teeth grinding (bruxism) relief</span></li>
+              <li data-i18n="treat.masseter.li3"><span>TMJ pain &amp; tension headaches</span></li>
+              <li data-i18n="treat.masseter.li4"><span>Facial asymmetry correction</span></li>
+              <li data-i18n="treat.masseter.li5"><span>Non-surgical face slimming</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 3. High Potency Skin Booster -->
+        <div class="treatment-detail-card" id="skin-booster" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="High Potency Skin Booster" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.skinBooster">High Potency Skin Booster</h3>
+            <p data-i18n="treat.skinBooster.desc">High Potency Skin Boosters are advanced injectable treatments that deliver a powerful blend of hyaluronic acid, amino acids, vitamins and antioxidants deep into the dermis. Unlike superficial moisturisers, these boosters hydrate the skin from within, stimulating collagen production and improving elasticity. The result is a radiant, plump, dewy complexion with reduced fine lines and improved skin texture. A course of 2–3 sessions is recommended for optimal, long-lasting results.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.skinBooster.li1"><span>Deep hydration &amp; skin plumping</span></li>
+              <li data-i18n="treat.skinBooster.li2"><span>Collagen &amp; elastin stimulation</span></li>
+              <li data-i18n="treat.skinBooster.li3"><span>Fine line &amp; wrinkle reduction</span></li>
+              <li data-i18n="treat.skinBooster.li4"><span>Improved skin texture &amp; radiance</span></li>
+              <li data-i18n="treat.skinBooster.li5"><span>Dull, tired &amp; dehydrated skin</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 4. Nefertiti Lift -->
+        <div class="treatment-detail-card" id="nefertiti" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Nefertiti Lift" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</h3>
+            <p data-i18n="treat.nefertiti.desc">The Nefertiti Lift is a non-surgical neck and jawline rejuvenation technique using strategic Botox injections. By relaxing the platysma bands (the vertical neck muscles) and the depressor muscles pulling down the jaw, the treatment creates a visible lift and tightening effect. It defines the jawline, reduces neck banding and softens marionette lines, giving a more sculpted profile. The procedure takes under 20 minutes with no downtime and results last 3–4 months.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.nefertiti.li1"><span>Platysma band reduction</span></li>
+              <li data-i18n="treat.nefertiti.li2"><span>Jawline definition &amp; lift</span></li>
+              <li data-i18n="treat.nefertiti.li3"><span>Neck tightening &amp; contouring</span></li>
+              <li data-i18n="treat.nefertiti.li4"><span>Marionette line softening</span></li>
+              <li data-i18n="treat.nefertiti.li5"><span>Non-surgical lower face lift</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 5. Hyperhidrosis Treatment -->
+        <div class="treatment-detail-card" id="hyperhidrosis" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Hyperhidrosis Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.hyperhidrosis">Hyperhidrosis Treatment</h3>
+            <p data-i18n="treat.hyperhidrosis.desc">Hyperhidrosis (excessive sweating) can be effectively treated with Botox injections in the underarms, palms, soles or forehead. Botox blocks the chemical signals that stimulate sweat glands, significantly reducing perspiration in the treated area. The treatment is quick, minimally invasive and provides relief for 6–12 months. Many patients report a life-changing improvement in comfort and confidence after just one session.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.hyperhidrosis.li1"><span>Excessive underarm sweating</span></li>
+              <li data-i18n="treat.hyperhidrosis.li2"><span>Palmar hyperhidrosis (sweaty palms)</span></li>
+              <li data-i18n="treat.hyperhidrosis.li3"><span>Plantar hyperhidrosis (sweaty feet)</span></li>
+              <li data-i18n="treat.hyperhidrosis.li4"><span>Facial blushing &amp; sweating</span></li>
+              <li data-i18n="treat.hyperhidrosis.li5"><span>Long-lasting sweat reduction (6–12 months)</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 6. Eyelid Lifting -->
+        <div class="treatment-detail-card" id="eyelid" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="Eyelid Lifting" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.eyelid">Eyelid Lifting</h3>
+            <p data-i18n="treat.eyelid.desc">Non-surgical eyelid lifting uses targeted Botox injections around the brow and eye area to open up the eyes and create a more alert, youthful appearance. By relaxing the muscles that pull the brows down and the orbicularis oculi, the eyebrows lift subtly and crow's feet are smoothed. The treatment can also address drooping upper eyelids and asymmetry. Results are visible within a week and last 3–4 months with zero downtime.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.eyelid.li1"><span>Drooping upper eyelids</span></li>
+              <li data-i18n="treat.eyelid.li2"><span>Brow ptosis (low brows)</span></li>
+              <li data-i18n="treat.eyelid.li3"><span>Periorbital fine lines &amp; crow's feet</span></li>
+              <li data-i18n="treat.eyelid.li4"><span>Asymmetric eye appearance</span></li>
+              <li data-i18n="treat.eyelid.li5"><span>Tired, heavy-looking eyes</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 7. Neck Tightening -->
+        <div class="treatment-detail-card" id="neck-tightening" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/morpheus8.jpg" alt="Neck Tightening" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.neckTight">Neck Tightening</h3>
+            <p data-i18n="treat.neckTight.desc">Neck tightening treatments combine laser, radiofrequency or injectable therapies to firm and rejuvenate loose, sagging skin on the neck and décolletage. These non-invasive modalities stimulate collagen and elastin remodelling, improving skin laxity and reducing the appearance of horizontal neck lines (tech neck). Patients enjoy a smoother, more contoured neck profile without surgery or extended recovery. A series of sessions is typically recommended for best outcomes.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.neckTight.li1"><span>Loose, sagging neck skin</span></li>
+              <li data-i18n="treat.neckTight.li2"><span>Horizontal neck lines (tech neck)</span></li>
+              <li data-i18n="treat.neckTight.li3"><span>Loss of jawline definition</span></li>
+              <li data-i18n="treat.neckTight.li4"><span>Turkey neck / double chin</span></li>
+              <li data-i18n="treat.neckTight.li5"><span>Non-invasive skin tightening</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 8. Cheeks, Chin, Lips, Temples Fillers -->
+        <div class="treatment-detail-card" id="cheeks" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Dermal Fillers" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples Fillers</h3>
+            <p data-i18n="treat.cheeks.desc">Premium dermal fillers restore lost volume, enhance facial contours and rejuvenate the face at any age. Using hyaluronic acid-based fillers, our specialists can augment cheekbones, define the chin, plump the lips and restore volume to hollow temples. The treatment is customised to your facial anatomy and aesthetic goals, delivering natural-looking enhancement with immediate results. Effects typically last 9–18 months depending on the product used and area treated.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.cheeks.li1"><span>Sunken cheeks &amp; midface volume loss</span></li>
+              <li data-i18n="treat.cheeks.li2"><span>Lip enhancement &amp; definition</span></li>
+              <li data-i18n="treat.cheeks.li3"><span>Chin augmentation &amp; projection</span></li>
+              <li data-i18n="treat.cheeks.li4"><span>Temple hollowing</span></li>
+              <li data-i18n="treat.cheeks.li5"><span>Facial asymmetry correction</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 9. Nasolabial Folds Treatment -->
+        <div class="treatment-detail-card" id="nasolabial" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="Nasolabial Folds Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.nasolabial">Nasolabial Folds Treatment</h3>
+            <p data-i18n="treat.nasolabial.desc">Nasolabial folds (the lines running from the nose to the corners of the mouth) deepen with age as facial fat pads descend and collagen is lost. Dermal filler injections safely soften these folds by restoring volume and support to the midface. The result is a smoother, more rested appearance without looking overfilled. Our practitioners use gentle techniques and premium fillers to achieve beautiful, lasting correction.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.nasolabial.li1"><span>Deep nasolabial folds (smile lines)</span></li>
+              <li data-i18n="treat.nasolabial.li2"><span>Midface volume loss</span></li>
+              <li data-i18n="treat.nasolabial.li3"><span>Marionette lines</span></li>
+              <li data-i18n="treat.nasolabial.li4"><span>Tired or gaunt facial appearance</span></li>
+              <li data-i18n="treat.nasolabial.li5"><span>Non-surgical midface rejuvenation</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 10. Radiesse -->
+        <div class="treatment-detail-card" id="radiesse" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Radiesse" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.radiesse">Radiesse</h3>
+            <p data-i18n="treat.radiesse.desc">Radiesse is a unique biostimulatory filler made of calcium hydroxylapatite microspheres suspended in a gel carrier. It provides immediate volume correction while stimulating your own collagen production for continued improvement over time. Radiesse is particularly effective for deeper wrinkles, cheek augmentation, jawline contouring and hand rejuvenation. Results last 12–18 months or longer, making it a cost-effective choice for long-term facial rejuvenation.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.radiesse.li1"><span>Deep nasolabial folds &amp; marionette lines</span></li>
+              <li data-i18n="treat.radiesse.li2"><span>Cheek volume &amp; lift</span></li>
+              <li data-i18n="treat.radiesse.li3"><span>Jawline &amp; chin contouring</span></li>
+              <li data-i18n="treat.radiesse.li4"><span>Hand rejuvenation</span></li>
+              <li data-i18n="treat.radiesse.li5"><span>Natural collagen stimulation</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 11. Non-Surgical Nose Reshaping -->
+        <div class="treatment-detail-card" id="nose" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Non-Surgical Nose Reshaping" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.nose">Non-Surgical Nose Reshaping</h3>
+            <p data-i18n="treat.nose.desc">Non-surgical rhinoplasty uses dermal fillers to reshape and refine the nose without surgery or downtime. Fillers can smooth a dorsal hump, lift the nasal tip, correct asymmetry and improve nasal profile. The procedure is performed in under 30 minutes using topical anaesthesia for comfort. Results are immediate and reversible, lasting 12–18 months, making it an ideal option for those exploring nasal aesthetics.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.nose.li1"><span>Dorsal hump camouflage</span></li>
+              <li data-i18n="treat.nose.li2"><span>Nasal tip lift &amp; refinement</span></li>
+              <li data-i18n="treat.nose.li3"><span>Nasal asymmetry correction</span></li>
+              <li data-i18n="treat.nose.li4"><span>Bridge augmentation</span></li>
+              <li data-i18n="treat.nose.li5"><span>Non-surgical profile balancing</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 12. Profhilo -->
+        <div class="treatment-detail-card" id="profhilo" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="Profhilo" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.profhilo">Profhilo</h3>
+            <p data-i18n="treat.profhilo.desc">Profhilo is a revolutionary injectable treatment that combines high-concentration hyaluronic acid with a unique dispersing technology for deep tissue hydration and collagen remodelling. Unlike traditional fillers, Profhilo spreads evenly through the tissue to improve skin laxity, firmness and overall quality. It is especially popular for treating ageing hands, the face, neck and décolletage. Two sessions spaced one month apart deliver outstanding, long-lasting results.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.profhilo.li1"><span>Skin laxity &amp; sagging</span></li>
+              <li data-i18n="treat.profhilo.li2"><span>Dehydrated, dull skin</span></li>
+              <li data-i18n="treat.profhilo.li3"><span>Fine lines &amp; crepey texture</span></li>
+              <li data-i18n="treat.profhilo.li4"><span>Hand rejuvenation</span></li>
+              <li data-i18n="treat.profhilo.li5"><span>Overall skin quality improvement</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 13. Polynucleotides -->
+        <div class="treatment-detail-card" id="polynucleotides" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Polynucleotides" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.polynucleotides">Polynucleotides</h3>
+            <p data-i18n="treat.polynucleotides.desc">Polynucleotide treatments harness the power of purified DNA fragments to stimulate cellular regeneration and tissue repair. These bio-revitalising injections deeply nourish the skin, promoting collagen synthesis, improving hydration and reducing inflammation. Polynucleotides are excellent for treating fine lines, dark circles, acne scars and overall skin ageing. A course of 3 sessions yields progressive improvements in skin tone, texture and firmness.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.polynucleotides.li1"><span>Fine lines &amp; skin ageing</span></li>
+              <li data-i18n="treat.polynucleotides.li2"><span>Under-eye dark circles &amp; hollows</span></li>
+              <li data-i18n="treat.polynucleotides.li3"><span>Acne scars &amp; textural issues</span></li>
+              <li data-i18n="treat.polynucleotides.li4"><span>Dehydrated, damaged skin</span></li>
+              <li data-i18n="treat.polynucleotides.li5"><span>Skin regeneration &amp; repair</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 14. Sculptra -->
+        <div class="treatment-detail-card" id="sculptra" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/morpheus8.jpg" alt="Sculptra" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.sculptra">Sculptra</h3>
+            <p data-i18n="treat.sculptra.desc">Sculptra is a unique biostimulatory injectable made from poly-L-lactic acid that gradually restores facial volume by stimulating your own collagen production. Over a course of 2–3 sessions, Sculptra rebuilds the facial structure from within, correcting deep volume loss in the cheeks, temples, and jawline for a natural, progressive rejuvenation. Results develop over several months and can last more than two years. It is ideal for patients wanting subtle, long-lasting anti-ageing without obvious change.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.sculptra.li1"><span>Age-related facial volume loss</span></li>
+              <li data-i18n="treat.sculptra.li2"><span>Sunken cheeks &amp; temples</span></li>
+              <li data-i18n="treat.sculptra.li3"><span>Nasolabial folds &amp; marionette lines</span></li>
+              <li data-i18n="treat.sculptra.li4"><span>Jawline &amp; chin recontouring</span></li>
+              <li data-i18n="treat.sculptra.li5"><span>Gradual, natural collagen renewal</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- ===== COLUMN 2 ===== -->
+
+        <!-- 1. PRP & Exosome Microneedling -->
+        <div class="treatment-detail-card" id="prp-microneedling" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="PRP & Exosome Microneedling" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</h3>
+            <p data-i18n="treat.prpMicro.desc">PRP (Platelet-Rich Plasma) combined with exosome therapy and microneedling is one of the most powerful regenerative treatments available. Your own blood is processed to concentrate growth factors, then infused into the skin via microneedling along with exosomes – potent signalling molecules that drive cellular repair. This triple-action therapy dramatically improves skin texture, reduces scars and pores, and restores a youthful glow. A course of 3 sessions spaced 4 weeks apart yields transformative results.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.prpMicro.li1"><span>Acne scars &amp; enlarged pores</span></li>
+              <li data-i18n="treat.prpMicro.li2"><span>Fine lines &amp; wrinkles</span></li>
+              <li data-i18n="treat.prpMicro.li3"><span>Dull, uneven skin tone</span></li>
+              <li data-i18n="treat.prpMicro.li4"><span>Stretch marks &amp; scars</span></li>
+              <li data-i18n="treat.prpMicro.li5"><span>Overall skin rejuvenation &amp; collagen induction</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 2. Radiofrequency Microneedling -->
+        <div class="treatment-detail-card" id="rf-microneedling" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Radiofrequency Microneedling" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.rfMicro">Radiofrequency Microneedling</h3>
+            <p data-i18n="treat.rfMicro.desc">Radiofrequency (RF) microneedling combines the collagen-induction power of microneedling with the skin-tightening energy of radiofrequency. Ultra-fine needles penetrate the dermis and deliver controlled RF heat, stimulating deep collagen remodelling while protecting the skin's surface. This technology is highly effective for skin tightening, scar revision, pore refinement and laxity correction. Most patients see noticeable improvement after a single session, with optimal results after 2–3 treatments.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.rfMicro.li1"><span>Skin laxity &amp; sagging</span></li>
+              <li data-i18n="treat.rfMicro.li2"><span>Acne scars &amp; boxcar scars</span></li>
+              <li data-i18n="treat.rfMicro.li3"><span>Enlarged pores &amp; textural issues</span></li>
+              <li data-i18n="treat.rfMicro.li4"><span>Fine lines &amp; jowls</span></li>
+              <li data-i18n="treat.rfMicro.li5"><span>Non-surgical face &amp; neck tightening</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 3. Double Chin Treatment -->
+        <div class="treatment-detail-card" id="double-chin" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/morpheus8.jpg" alt="Double Chin Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.doubleChin">Double Chin Treatment</h3>
+            <p data-i18n="treat.doubleChin.desc">Submental fat (double chin) can be effectively reduced using non-surgical treatments such as deoxycholic acid injections or laser lipolysis. These targeted therapies break down fat cells under the chin, which are then naturally eliminated by the body. The treatment contours the jawline and profile, creating a more defined and youthful appearance. A series of 2–4 sessions is typically required, with results becoming visible within weeks.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.doubleChin.li1"><span>Submental fat (double chin)</span></li>
+              <li data-i18n="treat.doubleChin.li2"><span>Poor jawline definition</span></li>
+              <li data-i18n="treat.doubleChin.li3"><span>Fullness under the chin</span></li>
+              <li data-i18n="treat.doubleChin.li4"><span>Non-surgical chin contouring</span></li>
+              <li data-i18n="treat.doubleChin.li5"><span>Permanent fat reduction</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 4. Mesotherapy for Fat & Tone -->
+        <div class="treatment-detail-card" id="mesotherapy" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Mesotherapy for Fat & Tone" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</h3>
+            <p data-i18n="treat.meso.desc">Mesotherapy involves micro-injections of a custom blend of vitamins, enzymes, amino acids and lipolytic compounds directly into the mesoderm (middle layer of skin). This treatment targets localised fat deposits, cellulite and skin laxity while simultaneously nourishing and toning the treated area. Commonly treated areas include the face, abdomen, thighs and arms. A course of 4–6 weekly sessions delivers progressive fat reduction and improved skin firmness.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.meso.li1"><span>Localised fat deposits</span></li>
+              <li data-i18n="treat.meso.li2"><span>Cellulite reduction</span></li>
+              <li data-i18n="treat.meso.li3"><span>Skin laxity &amp; poor tone</span></li>
+              <li data-i18n="treat.meso.li4"><span>Facial slimming &amp; contouring</span></li>
+              <li data-i18n="treat.meso.li5"><span>Body sculpting without surgery</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 5. Jawline Definition -->
+        <div class="treatment-detail-card" id="jawline" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="Jawline Definition" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.jawline">Jawline Definition</h3>
+            <p data-i18n="treat.jawline.desc">Jawline definition uses dermal fillers to sculpt and enhance the mandibular contour, creating a sharper, more aesthetically pleasing jawline. By adding structure to the jaw angle and chin, fillers can transform a weak or poorly defined jaw into a strong, balanced feature. This treatment is especially popular among both men and women seeking a more structured lower face. Results are immediate and can last 12–18 months with premium fillers.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.jawline.li1"><span>Weak or undefined jawline</span></li>
+              <li data-i18n="treat.jawline.li2"><span>Lack of chin projection</span></li>
+              <li data-i18n="treat.jawline.li3"><span>Jaw asymmetry</span></li>
+              <li data-i18n="treat.jawline.li4"><span>Age-related jawline laxity</span></li>
+              <li data-i18n="treat.jawline.li5"><span>Non-surgical facial masculinisation / feminisation</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 6. Filler Dissolving -->
+        <div class="treatment-detail-card" id="filler-dissolve" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Filler Dissolving" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.fillerDissolve">Filler Dissolving</h3>
+            <p data-i18n="treat.fillerDissolve.desc">Hyaluronidase injections safely and rapidly dissolve unwanted or overfilled hyaluronic acid fillers. Whether you have lumps, asymmetry, migration or simply changed your mind, filler dissolving provides immediate correction. The enzyme breaks down the filler, restoring your natural appearance within 24–48 hours. This treatment is also used to manage complications such as vascular occlusion, ensuring patient safety at all times.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.fillerDissolve.li1"><span>Overfilled or lumpy areas</span></li>
+              <li data-i18n="treat.fillerDissolve.li2"><span>Filler asymmetry or migration</span></li>
+              <li data-i18n="treat.fillerDissolve.li3"><span>Tyndall effect (blueish tint)</span></li>
+              <li data-i18n="treat.fillerDissolve.li4"><span>Unsatisfactory filler results</span></li>
+              <li data-i18n="treat.fillerDissolve.li5"><span>Vascular occlusion emergency treatment</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 7. Corrective Treatments -->
+        <div class="treatment-detail-card" id="corrective" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Corrective Treatments" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.corrective">Corrective Treatments</h3>
+            <p data-i18n="treat.corrective.desc">Our corrective treatments address a wide range of skin concerns including hyperpigmentation, melasma, post-inflammatory erythema, sun damage and uneven texture. Using a combination of medical-grade peels, lasers, topical therapies and advanced skincare, we create a personalised plan to restore your skin's health and clarity. Each protocol is tailored to your skin type and condition for safe, effective results. Ongoing support and follow-up ensure long-term improvement.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.corrective.li1"><span>Hyperpigmentation &amp; melasma</span></li>
+              <li data-i18n="treat.corrective.li2"><span>Post-inflammatory erythema (redness)</span></li>
+              <li data-i18n="treat.corrective.li3"><span>Sun spots &amp; photoageing</span></li>
+              <li data-i18n="treat.corrective.li4"><span>Uneven skin tone &amp; texture</span></li>
+              <li data-i18n="treat.corrective.li5"><span>Medical-grade corrective skincare plans</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 8. Skin Tags & Moles Removal -->
+        <div class="treatment-detail-card" id="skin-tags" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/morpheus8.jpg" alt="Skin Tags & Moles Removal" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.skinTags">Skin Tags &amp; Moles Removal</h3>
+            <p data-i18n="treat.skinTags.desc">We offer safe, effective removal of skin tags, moles, warts, seborrheic keratoses and other benign skin lesions using laser, cryotherapy or surgical excision. All procedures are performed by our medical team with precision and minimal discomfort. Lesions are removed in a single session with virtually no downtime and excellent cosmetic outcomes. Every lesion is carefully assessed to ensure safety and appropriate treatment selection.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.skinTags.li1"><span>Skin tags (acrochordons)</span></li>
+              <li data-i18n="treat.skinTags.li2"><span>Benign moles &amp; naevi</span></li>
+              <li data-i18n="treat.skinTags.li3"><span>Seborrheic keratoses</span></li>
+              <li data-i18n="treat.skinTags.li4"><span>Warts &amp; papillomas</span></li>
+              <li data-i18n="treat.skinTags.li5"><span>Minimal scarring &amp; fast healing</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 9. PRP Concentrate -->
+        <div class="treatment-detail-card" id="prp-concentrate" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="PRP Concentrate" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.prpConc">PRP Concentrate</h3>
+            <p data-i18n="treat.prpConc.desc">PRP (Platelet-Rich Plasma) Concentrate therapy uses your own blood's growth factors to stimulate healing, collagen production and tissue regeneration. After a simple blood draw, the platelet-rich plasma is separated and injected into targeted areas of the face, scalp or body. PRP is highly effective for facial rejuvenation, hair restoration and scar improvement. The treatment is natural, safe and biocompatible with no risk of allergic reaction.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.prpConc.li1"><span>Facial rejuvenation (vampire facial)</span></li>
+              <li data-i18n="treat.prpConc.li2"><span>Hair loss &amp; thinning</span></li>
+              <li data-i18n="treat.prpConc.li3"><span>Acne scars &amp; wound healing</span></li>
+              <li data-i18n="treat.prpConc.li4"><span>Under-eye dark circles &amp; hollows</span></li>
+              <li data-i18n="treat.prpConc.li5"><span>Natural collagen induction</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 10. Lab Diagnostics for Hair Loss -->
+        <div class="treatment-detail-card" id="hair-lab" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/injection.jpg" alt="Lab Diagnostics for Hair Loss" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</h3>
+            <p data-i18n="treat.hairLab.desc">Comprehensive laboratory diagnostics identify the root causes of hair loss, enabling targeted, effective treatment. Our panel includes hormone profiling (DHT, oestrogen, thyroid), nutritional deficiency screening (iron, ferritin, vitamin D, zinc), and inflammatory markers. Results are interpreted by our specialists who create a personalised treatment plan addressing your specific hair loss type. This evidence-based approach ensures the best possible outcomes for hair restoration.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.hairLab.li1"><span>Androgenetic alopecia (pattern baldness)</span></li>
+              <li data-i18n="treat.hairLab.li2"><span>Telogen effluvium (stress-related shedding)</span></li>
+              <li data-i18n="treat.hairLab.li3"><span>Nutritional deficiency hair loss</span></li>
+              <li data-i18n="treat.hairLab.li4"><span>Hormonal imbalance (thyroid, DHT)</span></li>
+              <li data-i18n="treat.hairLab.li5"><span>Personalised treatment plans</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 11. Exosomal Dermapen -->
+        <div class="treatment-detail-card" id="exosomal-dermapen" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/syringe-gloved.jpg" alt="Exosomal Dermapen" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.exosomalDermapen">Exosomal Dermapen</h3>
+            <p data-i18n="treat.exosomalDermapen.desc">Exosomal Dermapen combines medical-grade microneedling with topical application of exosome-rich serum for advanced skin regeneration. Exosomes are nano-sized vesicles packed with growth factors, cytokines and signalling proteins that communicate with skin cells to accelerate repair and rejuvenation. This synergistic treatment dramatically improves scar appearance, reduces pigmentation, tightens pores and restores skin radiance. A course of 3 sessions yields exceptional, cumulative results.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.exosomalDermapen.li1"><span>Acne scars &amp; surgical scars</span></li>
+              <li data-i18n="treat.exosomalDermapen.li2"><span>Pigmentation &amp; sun damage</span></li>
+              <li data-i18n="treat.exosomalDermapen.li3"><span>Enlarged pores &amp; textural irregularity</span></li>
+              <li data-i18n="treat.exosomalDermapen.li4"><span>Fine lines &amp; skin laxity</span></li>
+              <li data-i18n="treat.exosomalDermapen.li5"><span>Accelerated skin repair &amp; regeneration</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 12. Medical Mesotherapy -->
+        <div class="treatment-detail-card" id="medical-meso" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/facial-massage.jpg" alt="Medical Mesotherapy" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.medicalMeso">Medical Mesotherapy</h3>
+            <p data-i18n="treat.medicalMeso.desc">Medical mesotherapy is a regulated, prescription-based injectable treatment that delivers active ingredients directly to the target tissue. Unlike cosmetic mesotherapy, our medical-grade formulations contain precisely dosed vitamins, minerals, amino acids and hyaluronic acid for therapeutic skin restoration. It is indicated for dehydrated, ageing, pigmented or compromised skin and is often used alongside other aesthetic procedures. Treatments are tailored to each patient's clinical needs.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.medicalMeso.li1"><span>Severely dehydrated skin</span></li>
+              <li data-i18n="treat.medicalMeso.li2"><span>Ageing &amp; photoaged skin</span></li>
+              <li data-i18n="treat.medicalMeso.li3"><span>Post-procedure skin recovery</span></li>
+              <li data-i18n="treat.medicalMeso.li4"><span>Pigmentation &amp; dullness</span></li>
+              <li data-i18n="treat.medicalMeso.li5"><span>Prescription-strength revitalisation</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+        <!-- 13. Alopecia Areata Treatment -->
+        <div class="treatment-detail-card" id="alopecia" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/morpheus8.jpg" alt="Alopecia Areata Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.alopecia">Alopecia Areata Treatment</h3>
+            <p data-i18n="treat.alopecia.desc">Alopecia areata is an autoimmune condition causing patchy hair loss that can affect the scalp, eyebrows, beard and body. Our clinic offers advanced treatment options including topical immunotherapy, corticosteroid injections, PRP therapy and JAK inhibitors to suppress the immune attack and promote hair regrowth. Each treatment plan is individualised based on the severity and pattern of hair loss. Early intervention offers the best prognosis for full recovery.</p>
+            <ul class="td-list">
+              <li data-i18n="treat.alopecia.li1"><span>Patchy scalp hair loss</span></li>
+              <li data-i18n="treat.alopecia.li2"><span>Eyebrow &amp; beard alopecia</span></li>
+              <li data-i18n="treat.alopecia.li3"><span>Totalis &amp; universalis forms</span></li>
+              <li data-i18n="treat.alopecia.li4"><span>Autoimmune-related hair shedding</span></li>
+              <li data-i18n="treat.alopecia.li5"><span>Medical &amp; regenerative treatment options</span></li>
+            </ul>
+            <a href="https://wa.me/96551315007" class="td-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="td.enquire">Enquire on WhatsApp</span></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOOKING CTA -->
+      <div style="text-align:center;margin-top:60px;" data-aos="fade-up">
+        <p style="font-size:1.05rem;color:var(--text-light);margin-bottom:20px;" data-i18n="faceSkin.bookingText">Not sure which treatment is right for you? Book a consultation with our specialists today.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/96551315007" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> <span data-i18n="faceSkin.bookingWA">Book via WhatsApp</span>
+          </a>
+          <a href="/#contact" class="btn btn-outline" style="background:var(--green);color:var(--white);border-color:var(--green);">
+            <i class="fas fa-calendar-check"></i> <span data-i18n="faceSkin.bookingForm">Book Appointment</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic" class="footer-logo">
+          <p data-i18n="footer.desc">Al Hilal International Clinic is a premier dermatology and aesthetic medicine center in Salmiya, Kuwait, offering advanced, safe, and personalized skin and cosmetic treatments.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/alhilal.international_clinic/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/96551315007" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.quick">Quick Links</h4>
+          <ul>
+            <li><a href="/" data-i18n="nav.home">Home</a></li>
+            <li><a href="/#about" data-i18n="nav.about">About</a></li>
+            <li><a href="/services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="/treatments/face-skin.html" data-i18n="nav.treatments">Treatments</a></li>
+            <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+            <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.treatments">Treatments</h4>
+          <ul>
+            <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Botox &amp; Dysport</a></li>
+            <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.fillers">Dermal Fillers</a></li>
+            <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+            <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP Therapy</a></li>
+            <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+            <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Microneedling</a></li>
+            <li><a href="/treatments/radiant-skin.html" data-i18n="treat.skinRejuv">Skin Rejuvenation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+96551315007">+965 51315007</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/96551315007">WhatsApp</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location.text">Salmiya, Kuwait</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="contact.hours.short">Sat–Thu: 10 AM – 8 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al Hilal International Clinic. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
+        <p class="footer-license">MOH License No: 1337416</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/96551315007" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

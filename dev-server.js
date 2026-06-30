@@ -8,7 +8,17 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname));
+app.use((req, res, next) => {
+  if (req.path.endsWith('.html') || req.path === '/' || !req.path.includes('.')) {
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  }
+  next();
+});
+app.use(express.static(__dirname, { setHeaders: (res, path) => {
+  if (path.endsWith('.html')) res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  if (path.endsWith('.css')) res.setHeader('Content-Type', 'text/css; charset=utf-8');
+  if (path.endsWith('.js')) res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+}}));
 app.use(express.json());
 
 app.post('/api/contact', async (req, res) => {

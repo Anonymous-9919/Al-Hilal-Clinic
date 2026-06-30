@@ -23,7 +23,7 @@
       <div class="top-bar-right">
         <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
         <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <button id="langToggle" class="lang-toggle">العربية</button>
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
       </div>
     </div>
   </div>
@@ -43,7 +43,8 @@
           <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
           <div class="mega-menu" id="megaMenu">
             <div class="mega-menu-left">
-              <button class="active" data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button class="active" data-panel="all"><span data-i18n="menu.all">All Treatments</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
@@ -137,10 +138,12 @@
                 <ul>
                   <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
                   <li><hr class="services-divider"></li>
-                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
-                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
-                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
-                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="serv.injectables">Injectable Aesthetics</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="serv.laser">Laser Treatments</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.dermatology">Medical Dermatology</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.skinRejuv">Skin Rejuvenation</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="serv.bodyContour">Body Contouring</a></li>
+                  <li><a href="/#contact" data-i18n="serv.consultation">General Consultations</a></li>
                 </ul>
               </div>
             </div>
@@ -169,7 +172,7 @@
     <div class="container">
       <div class="treatment-grid">
         <div class="treatment-detail-card" id="laser-hair" data-aos="fade-up" data-aos-delay="100">
-          <div class="td-img"><img src="/assets/images/treatment-laser.jpg" alt="Laser Hair Removal"></div>
+          <div class="td-img"><img src="/assets/images/laser-hair-legs.jpg" alt="Laser Hair Removal"></div>
           <div class="td-body">
             <h3 data-i18n="treat.laserHair">Laser Hair Removal</h3>
             <p data-i18n="laserHair.desc">Our advanced laser hair removal system delivers safe, effective, permanent hair reduction for men and women of all skin types. Using state-of-the-art laser technology with integrated cooling, treatments are virtually pain-free and designed for optimal comfort. Whether you're looking to treat small areas or the entire body, our expert team creates a customized treatment plan tailored to your skin type and hair colour.</p>
@@ -185,7 +188,7 @@
         </div>
 
         <div class="treatment-detail-card" id="laser-rejuv" data-aos="fade-up" data-aos-delay="200">
-          <div class="td-img"><img src="/assets/images/treatment-skin.jpg" alt="Laser Skin Rejuvenation"></div>
+          <div class="td-img"><img src="/assets/images/led-therapy.jpg" alt="Laser Skin Rejuvenation"></div>
           <div class="td-body">
             <h3 data-i18n="treat.laserRejuv">Laser Skin Rejuvenation</h3>
             <p data-i18n="laserRejuv.desc">Non-ablative laser treatment that stimulates collagen production and resurfaces the skin to reduce fine lines, wrinkles, sun damage, and uneven texture. Restore your skin's natural radiance with minimal downtime.</p>
@@ -200,7 +203,7 @@
         </div>
 
         <div class="treatment-detail-card" id="pigmentation" data-aos="fade-up" data-aos-delay="300">
-          <div class="td-img"><img src="/assets/images/treatment-botox.jpg" alt="Pigmentation Correction"></div>
+          <div class="td-img"><img src="/assets/images/morpheus8.jpg" alt="Pigmentation Correction"></div>
           <div class="td-body">
             <h3 data-i18n="treat.pigmentation">Pigmentation Correction</h3>
             <p data-i18n="pigmentation.desc">Advanced laser and light-based treatments that target excess melanin to correct hyperpigmentation, melasma, sun spots, age spots, and post-inflammatory pigmentation. Achieve a more even, uniform skin tone with our customized protocols.</p>
@@ -215,7 +218,7 @@
         </div>
 
         <div class="treatment-detail-card" id="tightening" data-aos="fade-up" data-aos-delay="400">
-          <div class="td-img"><img src="/assets/images/treatment-laser.jpg" alt="Skin Tightening"></div>
+          <div class="td-img"><img src="/assets/images/laser-hair-legs.jpg" alt="Skin Tightening"></div>
           <div class="td-body">
             <h3 data-i18n="treat.skinTightening">Skin Tightening</h3>
             <p data-i18n="tightening.desc">Non-invasive laser and radiofrequency skin tightening treatments that stimulate collagen and elastin production to firm sagging skin on the face, neck, abdomen, arms, and thighs. Enjoy a lifted, youthful contour without surgery.</p>

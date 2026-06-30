@@ -23,7 +23,7 @@
       <div class="top-bar-right">
         <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
         <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <button id="langToggle" class="lang-toggle">العربية</button>
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
       </div>
     </div>
   </div>
@@ -43,7 +43,8 @@
           <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
           <div class="mega-menu" id="megaMenu">
             <div class="mega-menu-left">
-              <button class="active" data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button class="active" data-panel="all"><span data-i18n="menu.all">All Treatments</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
               <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
@@ -137,10 +138,12 @@
                 <ul>
                   <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
                   <li><hr class="services-divider"></li>
-                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
-                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
-                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
-                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="serv.injectables">Injectable Aesthetics</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="serv.laser">Laser Treatments</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.dermatology">Medical Dermatology</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="serv.skinRejuv">Skin Rejuvenation</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="serv.bodyContour">Body Contouring</a></li>
+                  <li><a href="/#contact" data-i18n="serv.consultation">General Consultations</a></li>
                 </ul>
               </div>
             </div>
@@ -169,7 +172,7 @@
     <div class="container">
       <div class="treatment-grid">
         <div class="treatment-detail-card" id="fat-dissolving" data-aos="fade-up" data-aos-delay="100">
-          <div class="td-img"><img src="/assets/images/treatment-botox.jpg" alt="Fat-Dissolving Injections"></div>
+          <div class="td-img"><img src="/assets/images/laser-body.jpg" alt="Fat-Dissolving Injections"></div>
           <div class="td-body">
             <h3 data-i18n="treat.fatDissolving">Fat-Dissolving Injections</h3>
             <p data-i18n="fatDissolving.desc">Non-surgical fat reduction injections for targeted areas such as the abdomen, thighs, love handles, and chin. This minimally invasive treatment breaks down fat cells naturally, helping you achieve a slimmer, more sculpted silhouette without downtime.</p>
@@ -184,7 +187,7 @@
         </div>
 
         <div class="treatment-detail-card" id="btl-exilis" data-aos="fade-up" data-aos-delay="200">
-          <div class="td-img"><img src="/assets/images/treatment-laser.jpg" alt="BTL Exilis Ultra"></div>
+          <div class="td-img"><img src="/assets/images/laser-belly.jpg" alt="BTL Exilis Ultra"></div>
           <div class="td-body">
             <h3 data-i18n="treat.btlExilis">BTL Exilis Ultra</h3>
             <p data-i18n="btlExilis.desc">A cutting-edge non-invasive radiofrequency and ultrasound treatment that tightens skin, reduces fat, and contours the body. BTL Exilis Ultra delivers controlled energy to deeply heat tissue, stimulating collagen production and reducing fat cells for visible, lasting results.</p>
@@ -199,7 +202,7 @@
         </div>
 
         <div class="treatment-detail-card" id="collagen" data-aos="fade-up" data-aos-delay="300">
-          <div class="td-img"><img src="/assets/images/treatment-skin.jpg" alt="Collagen Stimulators"></div>
+          <div class="td-img"><img src="/assets/images/injection.jpg" alt="Collagen Stimulators"></div>
           <div class="td-body">
             <h3 data-i18n="treat.collagenStim">Collagen Stimulators</h3>
             <p data-i18n="collagenStim.desc">Biostimulatory treatments that promote natural collagen production to improve skin firmness, elasticity, and body contour. These injectable treatments work gradually to restore structural support, giving your skin a tighter, more youthful appearance across the body.</p>
@@ -214,7 +217,7 @@
         </div>
 
         <div class="treatment-detail-card" id="double-chin" data-aos="fade-up" data-aos-delay="400">
-          <div class="td-img"><img src="/assets/images/treatment-facial.jpg" alt="Double Chin Reduction"></div>
+          <div class="td-img"><img src="/assets/images/laser-body.jpg" alt="Double Chin Reduction"></div>
           <div class="td-body">
             <h3 data-i18n="treat.doubleChin">Double Chin Reduction</h3>
             <p data-i18n="doubleChin.desc">Non-surgical double chin reduction using advanced injectable treatments that break down fat cells under the chin. This quick, comfortable procedure effectively reduces submental fat, enhancing your jawline profile and restoring facial harmony without surgery.</p>
