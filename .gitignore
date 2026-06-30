@@ -1,5 +1,5 @@
 node_modules/
-.vercel/
-.env*
-*.local
-.vercel
+.env.local
+*.ps1
+.DS_Store
+Thumbs.db

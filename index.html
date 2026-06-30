@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Hilal International Clinic | Aesthetics & Dermatology – Salmiya, Kuwait</title>
+  <meta name="description" content="Al Hilal International Clinic in Salmiya, Kuwait – expert aesthetics, dermatology, skin care & laser treatments. Botox, fillers, PRP, laser hair removal & more.">
+  <meta property="og:title" content="Al Hilal International Clinic | Aesthetics & Dermatology Kuwait">
+  <meta property="og:description" content="Premium aesthetic & dermatology care in Salmiya, Kuwait. Expert treatments in Botox, fillers, laser, skin rejuvenation & more.">
+  <meta property="og:image" content="/assets/images/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Al Hilal International Clinic",
+    "description": "Expert aesthetics, dermatology, skin care & laser treatments in Salmiya, Kuwait.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Salmiya", "addressCountry": "KW" },
+    "telephone": "+96551315007",
+    "url": "https://al-hilal-clinic.vercel.app",
+    "priceRange": "$$",
+    "medicalSpecialty": ["Dermatology", "AestheticMedicine", "LaserTreatment"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="top.location">Salmiya, Kuwait</span></span>
+        <span><i class="fas fa-clock"></i> <span data-i18n="top.hours">Sat–Thu: 10:00 AM – 8:00 PM</span></span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
+        <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="top.whatsapp">WhatsApp</span></a>
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic">
+        <span class="nav-logo-text">Al Hilal Clinic</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="active" data-i18n="nav.home">Home</a></li>
+        <li class="menu-trigger">
+          <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <!-- MEGA MENU -->
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-menu-left">
+              <button class="active" data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+            </div>
+            <div class="mega-menu-right" id="megaPanel">
+              <!-- Face & Skin -->
+              <div class="mega-panel active" data-panel="face-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Dysport &amp; Botox</a></li>
+                    <li><a href="/treatments/face-skin/masseter-botox.html" data-i18n="treat.masseter">Masseter Botox</a></li>
+                    <li><a href="/treatments/face-skin/skin-booster.html" data-i18n="treat.skinBooster">High Potency Skin Booster</a></li>
+                    <li><a href="/treatments/face-skin/nefertiti-lift.html" data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</a></li>
+                    <li><a href="/treatments/face-skin/hyperhidrosis.html" data-i18n="treat.hyperhidrosis">Hyperhidrosis</a></li>
+                    <li><a href="/treatments/face-skin/eyelid-lifting.html" data-i18n="treat.eyelid">Eyelid Lifting</a></li>
+                    <li><a href="/treatments/face-skin/neck-tightening.html" data-i18n="treat.neckTight">Neck Tightening</a></li>
+                    <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples</a></li>
+                    <li><a href="/treatments/face-skin/nasolabial-folds.html" data-i18n="treat.nasolabial">Nasolabial Folds</a></li>
+                    <li><a href="/treatments/face-skin/radiesse.html" data-i18n="treat.radiesse">Radiesse</a></li>
+                    <li><a href="/treatments/face-skin/nose-reshaping.html" data-i18n="treat.nose">Non-Surgical Nose Reshaping</a></li>
+                    <li><a href="/treatments/face-skin/profhilo.html" data-i18n="treat.profhilo">Profhilo</a></li>
+                    <li><a href="/treatments/face-skin/polynucleotides.html" data-i18n="treat.polynucleotides">Polynucleotides</a></li>
+                    <li><a href="/treatments/face-skin/sculptra.html" data-i18n="treat.sculptra">Sculptra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/rf-microneedling.html" data-i18n="treat.rfMicro">Radiofrequency Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/double-chin.html" data-i18n="treat.doubleChin">Double Chin</a></li>
+                    <li><a href="/treatments/face-skin/mesotherapy-fat-tone.html" data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</a></li>
+                    <li><a href="/treatments/face-skin/jawline-definition.html" data-i18n="treat.jawline">Jawline Definition</a></li>
+                    <li><a href="/treatments/face-skin/filler-dissolving.html" data-i18n="treat.fillerDissolve">Filler Dissolving</a></li>
+                    <li><a href="/treatments/face-skin/corrective-treatments.html" data-i18n="treat.corrective">Corrective Treatments</a></li>
+                    <li><a href="/treatments/face-skin/skin-tags-moles.html" data-i18n="treat.skinTags">Skin Tags &amp; Moles</a></li>
+                    <li><a href="/treatments/face-skin/prp-concentrate.html" data-i18n="treat.prpConc">PRP Concentrate</a></li>
+                    <li><a href="/treatments/face-skin/hair-loss-diagnostics.html" data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</a></li>
+                    <li><a href="/treatments/face-skin/exosomal-dermapen.html" data-i18n="treat.exosomalDermapen">Exosomal Dermapen</a></li>
+                    <li><a href="/treatments/face-skin/medical-mesotherapy.html" data-i18n="treat.medicalMeso">Medical Mesotherapy</a></li>
+                    <li><a href="/treatments/face-skin/alopecia-areata.html" data-i18n="treat.alopecia">Alopecia Areata</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Radiant Skin -->
+              <div class="mega-panel" data-panel="radiant-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Dermapen</a></li>
+                    <li><a href="/treatments/radiant-skin/hydracool.html" data-i18n="treat.hydracool">HydraCool</a></li>
+                    <li><a href="/treatments/radiant-skin/nanofacial.html" data-i18n="treat.nanofacial">NanoFacial</a></li>
+                    <li><a href="/treatments/radiant-skin/vivace-microneedling.html" data-i18n="treat.vivace">Vivace Microneedling</a></li>
+                    <li><a href="/treatments/radiant-skin/hydrafacial.html" data-i18n="treat.hydrafacial">Microdermabrasion/HydraFacial</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/exosome.html" data-i18n="treat.exosome">Exosome</a></li>
+                    <li><a href="/treatments/radiant-skin/salmon-dna.html" data-i18n="treat.salmonDna">Salmon DNA</a></li>
+                    <li><a href="/treatments/radiant-skin/carboxy-therapy.html" data-i18n="treat.carboxy">Carboxy Therapy</a></li>
+                    <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Body Contouring -->
+              <div class="mega-panel" data-panel="body-contouring">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/fat-dissolving.html" data-i18n="treat.fatDissolving">Fat-Dissolving Injections</a></li>
+                    <li><a href="/treatments/body-contouring/btl-exilis.html" data-i18n="treat.btlExilis">BTL Exilis Ultra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/collagen-stimulators.html" data-i18n="treat.collagenStim">Collagen Stimulators</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Laser Hair Removal -->
+              <div class="mega-panel" data-panel="laser-hair">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-trigger">
+          <a href="#" id="servicesTrigger" data-i18n="nav.services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="mega-menu services-mega" id="servicesMega">
+            <div class="mega-menu-right">
+              <div class="mega-col">
+                <ul>
+                  <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
+                  <li><hr class="services-divider"></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+        <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/96551315007" class="nav-cta" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> <span data-i18n="nav.book">Book Now</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video src="/assets/images/hero-video.mp4" autoplay muted loop playsinline poster="/assets/images/hero-bg.jpg"></video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge" data-aos="fade-up" data-aos-delay="100" data-i18n="hero.badge">Salmiya, Kuwait</span>
+      <h1 data-aos="fade-up" data-aos-delay="200">
+        <span class="en-text">Expert Aesthetic &amp; Dermatology Care</span>
+        <span class="ar-text" style="display:none;">رعاية تجميلية وجلدية خبيرة</span>
+      </h1>
+      <p data-aos="fade-up" data-aos-delay="300" data-i18n="hero.sub">
+        Advanced dermatology, aesthetic medicine &amp; laser treatments in the heart of Salmiya.<br>
+        Your journey to radiant, healthy skin begins here.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="/#contact" class="btn btn-primary" data-i18n="hero.cta1">Book Appointment</a>
+        <a href="https://wa.me/96551315007" class="btn btn-outline" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="hero.whatsapp">WhatsApp Us</span>
+        </a>
+      </div>
+      <div class="hero-phone" data-aos="fade-up" data-aos-delay="500">
+        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="about.tag">Welcome to</span>
+        <h2 data-i18n="about.title">Al Hilal International Clinic</h2>
+        <p class="section-desc" data-i18n="about.desc">Your trusted destination for premium dermatology and aesthetic medicine in Salmiya, Kuwait. We combine medical excellence with a luxury patient experience.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="/assets/images/team/dr-ahmad.png" alt="Al Hilal International Clinic">
+          <div class="about-exp">
+            <span class="about-exp-num">15+</span>
+            <span class="about-exp-label" data-i18n="about.exp">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <p data-i18n="about.p1">At Al Hilal International Clinic, we are dedicated to providing world-class aesthetic and dermatological care tailored to the unique needs of our patients in Kuwait. Our clinic is led by a team of highly qualified specialists with extensive experience in medical and cosmetic dermatology.</p>
+          <p data-i18n="about.p2">From advanced laser treatments to injectable aesthetics and medical dermatology, every procedure is performed with precision, using the latest technology and highest safety standards. We believe in natural-looking results that enhance your confidence and well-being.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num" data-count="10000">0</span><span class="stat-plus">+</span><span class="stat-label" data-i18n="about.stat1">Happy Patients</span></div>
+            <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span><span class="stat-label" data-i18n="about.stat2">Years Experience</span></div>
+            <div class="stat"><span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span><span class="stat-label" data-i18n="about.stat3">Treatments</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="why.tag">Why Choose Us</span>
+        <h2 data-i18n="why.title">The Al Hilal Difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="fas fa-user-md"></i></div>
+          <h3 data-i18n="why.card1.title">Expert Leadership</h3>
+          <p data-i18n="why.card1.text">Led by board-certified dermatologists with extensive international experience in aesthetic medicine.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon"><i class="fas fa-microscope"></i></div>
+          <h3 data-i18n="why.card2.title">Cutting-Edge Technology</h3>
+          <p data-i18n="why.card2.text">The latest dermatological and laser innovations for safe, effective, and reliable procedures.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3 data-i18n="why.card3.title">Personalized Care</h3>
+          <p data-i18n="why.card3.text">Custom treatment plans designed for your unique skin type, concerns, and aesthetic goals.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h3 data-i18n="why.card4.title">Proven Results</h3>
+          <p data-i18n="why.card4.text">Trusted by thousands of satisfied patients for outstanding, natural-looking outcomes.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="why-icon"><i class="fas fa-gem"></i></div>
+          <h3 data-i18n="why.card5.title">Luxury Experience</h3>
+          <p data-i18n="why.card5.text">Premium comfort and privacy in a sophisticated, welcoming environment.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="why-icon"><i class="fas fa-location-dot"></i></div>
+          <h3 data-i18n="why.card6.title">Prime Location</h3>
+          <p data-i18n="why.card6.text">Conveniently located in Salmiya, easily accessible from all areas of Kuwait.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="services.tag">Our Expertise</span>
+        <h2 data-i18n="services.title">Comprehensive Aesthetic &amp; Dermatology Services</h2>
+        <p class="section-desc" data-i18n="services.desc">From injectables to laser, we offer a full spectrum of advanced treatments tailored to your needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-cat" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-cat-icon"><i class="fas fa-syringe"></i></div>
+          <h3 data-i18n="services.cat1">Injectable Aesthetics</h3>
+          <p data-i18n="services.cat1.desc">Botox, dermal fillers, skin boosters &amp; advanced injectable treatments for natural rejuvenation.</p>
+          <a href="/treatments/face-skin.html" class="service-link" data-i18n="services.view">View Treatments <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-cat" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-cat-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 data-i18n="services.cat2">Laser Treatments</h3>
+          <p data-i18n="services.cat2.desc">Advanced laser hair removal, skin rejuvenation, pigmentation correction &amp; skin tightening.</p>
+          <a href="/treatments/laser-hair-removal.html" class="service-link" data-i18n="services.view">View Treatments <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-cat" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-cat-icon"><i class="fas fa-hand-sparkles"></i></div>
+          <h3 data-i18n="services.cat3">Medical Dermatology</h3>
+          <p data-i18n="services.cat3.desc">Expert diagnosis &amp; treatment for acne, eczema, psoriasis, skin infections &amp; all dermatological conditions.</p>
+          <a href="/treatments/radiant-skin.html" class="service-link" data-i18n="services.view">View Treatments <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-cat" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-cat-icon"><i class="fas fa-spa"></i></div>
+          <h3 data-i18n="services.cat4">Skin Rejuvenation</h3>
+          <p data-i18n="services.cat4.desc">Chemical peels, microneedling, HydraFacial, PRP &amp; advanced skin revitalization therapies.</p>
+          <a href="/treatments/radiant-skin.html" class="service-link" data-i18n="services.view">View Treatments <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS PREVIEW -->
+  <section class="treatments section" id="treatments">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="treatments.tag">Treatments</span>
+        <h2 data-i18n="treatments.title">Explore Our Full Range of Treatments</h2>
+        <p class="section-desc" data-i18n="treatments.desc">Every treatment is performed by our expert team using the latest medical technology. Browse our categories below.</p>
+      </div>
+      <div class="treatments-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+        <button class="filter-btn" data-filter="face-skin" data-i18n="menu.faceSkin">Face &amp; Skin</button>
+        <button class="filter-btn" data-filter="radiant-skin" data-i18n="menu.radiantSkin">Radiant Skin</button>
+        <button class="filter-btn" data-filter="body-contouring" data-i18n="menu.bodyContouring">Body Contouring</button>
+        <button class="filter-btn" data-filter="laser-hair" data-i18n="menu.laserHair">Laser Hair Removal</button>
+      </div>
+      <div class="treatments-grid">
+        <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="100">
+          <div class="treatment-img"><img src="/assets/images/treatment-botox.jpg" alt="Botox & Dysport"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.botox">Botox &amp; Dysport</h3>
+            <p data-i18n="treat.botox.desc">Expert wrinkle reduction with Botox and Dysport. Smooth fine lines, crow's feet, forehead wrinkles, and frown lines for a refreshed, natural look.</p>
+            <a href="/treatments/face-skin/botox.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="150">
+          <div class="treatment-img"><img src="/assets/images/treatment-facial.jpg" alt="Dermal Fillers"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.fillers">Dermal Fillers</h3>
+            <p data-i18n="treat.fillers.desc">Restore volume, enhance contours, and rejuvenate your appearance with premium dermal fillers for lips, cheeks, chin, and more.</p>
+            <a href="/treatments/face-skin/cheeks-lips-temples.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="treatment-card" data-category="laser-hair" data-aos="fade-up" data-aos-delay="200">
+          <div class="treatment-img"><img src="/assets/images/treatment-laser.jpg" alt="Laser Hair Removal"><div class="treatment-cat-label" data-i18n="menu.laserHair">Laser Hair Removal</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.laserHair">Laser Hair Removal</h3>
+            <p data-i18n="treat.laserHair.desc">Permanent hair reduction using advanced laser technology. Safe, effective, suitable for all skin types.</p>
+            <a href="/treatments/laser-hair/laser-hair.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="treatment-card" data-category="radiant-skin" data-aos="fade-up" data-aos-delay="250">
+          <div class="treatment-img"><img src="/assets/images/treatment-skin.jpg" alt="Chemical Peels"><div class="treatment-cat-label" data-i18n="menu.radiantSkin">Radiant Skin</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.chemicalPeels">Chemical Peels &amp; Facials</h3>
+            <p data-i18n="treat.chemicalPeels.desc">Professional-grade chemical peels and advanced facial treatments for radiant, healthy skin.</p>
+            <a href="/treatments/radiant-skin/chemical-peels.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="treatment-card" data-category="face-skin" data-aos="fade-up" data-aos-delay="300">
+          <div class="treatment-img"><img src="/assets/images/treatment-facial.jpg" alt="PRP Therapy"><div class="treatment-cat-label" data-i18n="menu.faceSkin">Face &amp; Skin</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.prpMicro">PRP &amp; Microneedling</h3>
+            <p data-i18n="treat.prpMicro.desc">Platelet-Rich Plasma therapy and advanced microneedling for natural collagen stimulation and skin rejuvenation.</p>
+            <a href="/treatments/face-skin/prp-microneedling.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="treatment-card" data-category="body-contouring" data-aos="fade-up" data-aos-delay="350">
+          <div class="treatment-img"><img src="/assets/images/treatment-botox.jpg" alt="Body Contouring"><div class="treatment-cat-label" data-i18n="menu.bodyContouring">Body Contouring</div></div>
+          <div class="treatment-info">
+            <h3 data-i18n="treat.bodyContour">Body Contouring</h3>
+            <p data-i18n="treat.bodyContour.desc">Non-invasive body contouring and fat reduction treatments for a more sculpted physique.</p>
+            <a href="/treatments/body-contouring/fat-dissolving.html" class="service-link" data-i18n="services.view">View Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;" data-aos="fade-up">
+        <a href="/services.html" class="btn btn-primary" data-i18n="treatments.allBtn">View All Treatments</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALISTS -->
+  <section class="specialists section" id="specialists">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="specialists.tag">Our Team</span>
+        <h2 data-i18n="specialists.title">Meet Our Expert Specialists</h2>
+        <p class="section-desc" data-i18n="specialists.desc">Highly qualified professionals dedicated to your skin health and aesthetic goals.</p>
+      </div>
+      <div class="swiper specialists-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="specialist-card">
+              <div class="specialist-img"><img src="/assets/images/team/team-1.png" alt="Dr. Ahmad Al-Rashid"></div>
+              <div class="specialist-info">
+                <h3>Dr. Ahmad Al-Rashid</h3>
+                <span class="specialist-role" data-i18n="specialists.role1">Medical Director &amp; Consultant Dermatologist</span>
+                <p data-i18n="specialists.bio1">Board-certified dermatologist with over 15 years of experience in medical and aesthetic dermatology, recognized internationally for excellence in patient care.</p>
+                <div class="specialist-creds">
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred1">Arab Board of Dermatology</span></span>
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred1b">Fellow, American Academy of Dermatology</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="specialist-card">
+              <div class="specialist-img"><img src="/assets/images/team/team-2.png" alt="Dr. Layla Al-Mutairi"></div>
+              <div class="specialist-info">
+                <h3>Dr. Layla Al-Mutairi</h3>
+                <span class="specialist-role" data-i18n="specialists.role2">Aesthetic Medicine Specialist</span>
+                <p data-i18n="specialists.bio2">Expert in injectable treatments, laser therapy, and advanced aesthetic procedures with 10+ years experience and international training.</p>
+                <div class="specialist-creds">
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred2">American Board of Aesthetic Medicine</span></span>
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred2b">Certified Laser Specialist</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="specialist-card">
+              <div class="specialist-img"><img src="/assets/images/team/team-3.png" alt="Dr. Fatima Al-Sabah"></div>
+              <div class="specialist-info">
+                <h3>Dr. Fatima Al-Sabah</h3>
+                <span class="specialist-role" data-i18n="specialists.role3">Senior Dermatologist</span>
+                <p data-i18n="specialists.bio3">Specializing in medical dermatology, skin cancer screening, and management of chronic skin conditions with a patient-centered approach.</p>
+                <div class="specialist-creds">
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred3">Kuwait Medical Board</span></span>
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred3b">European Academy of Dermatology</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="specialist-card">
+              <div class="specialist-img"><img src="/assets/images/team/team-4.png" alt="Dr. Nour Al-Harbi"></div>
+              <div class="specialist-info">
+                <h3>Dr. Nour Al-Harbi</h3>
+                <span class="specialist-role" data-i18n="specialists.role4">Laser &amp; Aesthetics Specialist</span>
+                <p data-i18n="specialists.bio4">Expert in laser treatments, skin rejuvenation, and body contouring with advanced international training and certification.</p>
+                <div class="specialist-creds">
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred4">International Laser Institute</span></span>
+                  <span><i class="fas fa-certificate"></i> <span data-i18n="specialists.cred4b">Certified Aesthetic Practitioner</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="gallery.tag">Results</span>
+        <h2 data-i18n="gallery.title">Before &amp; After</h2>
+        <p class="section-desc" data-i18n="gallery.desc">Real results from our patients. Each transformation reflects our commitment to excellence.</p>
+      </div>
+      <div class="gallery-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+        <button class="filter-btn" data-filter="botox" data-i18n="filter.botox">Botox</button>
+        <button class="filter-btn" data-filter="fillers" data-i18n="filter.fillers">Fillers</button>
+        <button class="filter-btn" data-filter="laser" data-i18n="filter.laser">Laser</button>
+        <button class="filter-btn" data-filter="skin" data-i18n="filter.skin">Skin</button>
+      </div>
+      <div class="gallery-grid" data-aos="fade-up">
+        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/treatment-botox.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.botox">Forehead Botox</div></div></div>
+        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/treatment-facial.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.fillers">Lip Fillers</div></div></div>
+        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/treatment-laser.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.laser">Laser Hair Removal</div></div></div>
+        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/treatment-skin.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.skin">Acne Treatment</div></div></div>
+        <div class="gallery-item" data-category="fillers"><div class="gallery-compare"><img src="/assets/images/treatment-botox.jpg" alt="Fillers Before & After"><div class="gallery-label" data-i18n="gallery.jawline">Jawline Definition</div></div></div>
+        <div class="gallery-item" data-category="botox"><div class="gallery-compare"><img src="/assets/images/treatment-facial.jpg" alt="Botox Before & After"><div class="gallery-label" data-i18n="gallery.neck">Neck Botox</div></div></div>
+        <div class="gallery-item" data-category="skin"><div class="gallery-compare"><img src="/assets/images/treatment-skin.jpg" alt="Skin Before & After"><div class="gallery-label" data-i18n="gallery.pigmentation">Pigmentation Correction</div></div></div>
+        <div class="gallery-item" data-category="laser"><div class="gallery-compare"><img src="/assets/images/treatment-laser.jpg" alt="Laser Before & After"><div class="gallery-label" data-i18n="gallery.rejuvenation">Skin Rejuvenation</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="testimonials.tag">Testimonials</span>
+        <h2 data-i18n="testimonials.title">What Our Patients Say</h2>
+      </div>
+      <div class="swiper testimonials-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p data-i18n="testimonial.1">"Exceptional care from the moment I walked in. Dr. Al-Rashid took the time to understand my concerns and the results exceeded my expectations. Truly a world-class clinic."</p>
+              <div class="testimonial-author"><div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div><div><strong>Aisha M.</strong><span data-i18n="testimonial.1t">Botox Treatment</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p data-i18n="testimonial.2">"I've been coming to Al Hilal for over a year for laser hair removal and the results are amazing. The team is professional, friendly, and makes you feel completely comfortable."</p>
+              <div class="testimonial-author"><div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div><div><strong>Noura K.</strong><span data-i18n="testimonial.2t">Laser Hair Removal</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p data-i18n="testimonial.3">"The chemical peel treatment transformed my skin. I've never felt more confident. Thank you to the entire team at Al Hilal for your expertise and care."</p>
+              <div class="testimonial-author"><div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div><div><strong>Laila S.</strong><span data-i18n="testimonial.3t">Chemical Peel</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p data-i18n="testimonial.4">"Professional, clean, and results-driven. My filler treatment looks completely natural — exactly what I wanted. Highly recommend Al Hilal Clinic."</p>
+              <div class="testimonial-author"><div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div><div><strong>Mona A.</strong><span data-i18n="testimonial.4t">Dermal Fillers</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p data-i18n="testimonial.5">"Best dermatology clinic in Kuwait. Dr. Fatima helped me manage my eczema when no one else could. Finally, I have my skin back. Forever grateful."</p>
+              <div class="testimonial-author"><div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div><div><strong>Sarah H.</strong><span data-i18n="testimonial.5t">Medical Dermatology</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-i18n="contact.tag">Get In Touch</span>
+        <h2 data-i18n="contact.title">Book Your Appointment</h2>
+        <p class="section-desc" data-i18n="contact.desc">Ready to start your journey? Contact us or fill in the form and we'll get back to you promptly.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3 data-i18n="contact.call">Call Us</h3>
+            <a href="tel:+96551315007">+965 51315007</a>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+            <a href="https://wa.me/96551315007" target="_blank" rel="noopener">+965 51315007</a>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3 data-i18n="contact.location">Location</h3>
+            <p data-i18n="contact.location.text">Salmiya, Kuwait</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <h3 data-i18n="contact.hours">Working Hours</h3>
+            <p data-i18n="contact.hours.text">Saturday – Thursday: 10:00 AM – 8:00 PM<br>Friday: Closed</p>
+          </div>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34766.29979962137!2d47.9964!3d29.3331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d4a3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sSalmiya%2C%20Kuwait!5e0!3m2!1sen!2s!4v1" width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName" data-i18n="form.name">Full Name *</label>
+                <input type="text" id="formName" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="formPhone" data-i18n="form.phone">Phone Number *</label>
+                <input type="tel" id="formPhone" name="phone" required placeholder="+965 XXXX XXXX">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formEmail" data-i18n="form.email">Email</label>
+                <input type="email" id="formEmail" name="email" placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="formService" data-i18n="form.service">Service Interested In *</label>
+                <select id="formService" name="service" required>
+                  <option value="" data-i18n="form.select">Select a service</option>
+                  <option value="Botox & Dysport">Botox &amp; Dysport</option>
+                  <option value="Dermal Fillers">Dermal Fillers</option>
+                  <option value="Laser Hair Removal">Laser Hair Removal</option>
+                  <option value="PRP Therapy">PRP Therapy</option>
+                  <option value="Chemical Peels">Chemical Peels</option>
+                  <option value="Microneedling">Microneedling</option>
+                  <option value="Skin Rejuvenation">Skin Rejuvenation</option>
+                  <option value="Medical Dermatology">Medical Dermatology</option>
+                  <option value="Body Contouring">Body Contouring</option>
+                  <option value="General Consultation">General Consultation</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formMessage" data-i18n="form.message">Message *</label>
+              <textarea id="formMessage" name="message" rows="5" required placeholder="Tell us about your concerns or questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmit">
+              <span data-i18n="form.submit">Send Message</span> <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic" class="footer-logo">
+          <p data-i18n="footer.desc">Al Hilal International Clinic is a premier dermatology and aesthetic medicine center in Salmiya, Kuwait, offering advanced, safe, and personalized skin and cosmetic treatments.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/alhilal.international_clinic/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/96551315007" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.quick">Quick Links</h4>
+          <ul>
+            <li><a href="/" data-i18n="nav.home">Home</a></li>
+            <li><a href="/#about" data-i18n="nav.about">About</a></li>
+            <li><a href="/services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="/treatments/face-skin.html" data-i18n="nav.treatments">Treatments</a></li>
+            <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+            <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.treatments">Treatments</h4>
+          <ul>
+            <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Botox &amp; Dysport</a></li>
+            <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.fillers">Dermal Fillers</a></li>
+            <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+            <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP Therapy</a></li>
+            <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+            <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Microneedling</a></li>
+            <li><a href="/treatments/radiant-skin.html" data-i18n="treat.skinRejuv">Skin Rejuvenation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+96551315007">+965 51315007</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/96551315007">WhatsApp</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location.text">Salmiya, Kuwait</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="contact.hours.short">Sat–Thu: 10 AM – 8 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al Hilal International Clinic. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
+        <p class="footer-license">MOH License No: 1337416</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/96551315007" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiant Skin Treatments | Al Hilal International Clinic – Salmiya, Kuwait</title>
+  <meta name="description" content="Explore our radiant skin treatments at Al Hilal International Clinic in Salmiya, Kuwait – Dermapen, HydraCool, NanoFacial, Vivace, HydraFacial, Exosome Therapy, Salmon DNA, Carboxy Therapy & Chemical Peels.">
+  <link rel="icon" type="image/jpeg" href="/assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="top.location">Salmiya, Kuwait</span></span>
+        <span><i class="fas fa-clock"></i> <span data-i18n="top.hours">Sat–Thu: 10:00 AM – 8:00 PM</span></span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+96551315007"><i class="fas fa-phone-alt"></i> +965 51315007</a>
+        <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="top.whatsapp">WhatsApp</span></a>
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">العربية</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic">
+        <span class="nav-logo-text">Al Hilal Clinic</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" data-i18n="nav.home">Home</a></li>
+        <li class="menu-trigger">
+          <a href="#" id="treatmentsTrigger" data-i18n="nav.treatments">Treatments <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-menu-left">
+              <button data-panel="face-skin"><span data-i18n="menu.faceSkin">Face &amp; Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button class="active" data-panel="radiant-skin"><span data-i18n="menu.radiantSkin">Radiant Skin</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="body-contouring"><span data-i18n="menu.bodyContouring">Body Contouring</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+              <button data-panel="laser-hair"><span data-i18n="menu.laserHair">Laser Hair Removal</span> <i class="fas fa-chevron-right mega-arrow"></i></button>
+            </div>
+            <div class="mega-menu-right" id="megaPanel">
+              <div class="mega-panel" data-panel="face-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Dysport &amp; Botox</a></li>
+                    <li><a href="/treatments/face-skin/masseter-botox.html" data-i18n="treat.masseter">Masseter Botox</a></li>
+                    <li><a href="/treatments/face-skin/skin-booster.html" data-i18n="treat.skinBooster">High Potency Skin Booster</a></li>
+                    <li><a href="/treatments/face-skin/nefertiti-lift.html" data-i18n="treat.nefertiti">Nefertiti Lift (Neck &amp; Jawline)</a></li>
+                    <li><a href="/treatments/face-skin/hyperhidrosis.html" data-i18n="treat.hyperhidrosis">Hyperhidrosis</a></li>
+                    <li><a href="/treatments/face-skin/eyelid-lifting.html" data-i18n="treat.eyelid">Eyelid Lifting</a></li>
+                    <li><a href="/treatments/face-skin/neck-tightening.html" data-i18n="treat.neckTight">Neck Tightening</a></li>
+                    <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.cheeks">Cheeks, Chin, Lips, Temples</a></li>
+                    <li><a href="/treatments/face-skin/nasolabial-folds.html" data-i18n="treat.nasolabial">Nasolabial Folds</a></li>
+                    <li><a href="/treatments/face-skin/radiesse.html" data-i18n="treat.radiesse">Radiesse</a></li>
+                    <li><a href="/treatments/face-skin/nose-reshaping.html" data-i18n="treat.nose">Non-Surgical Nose Reshaping</a></li>
+                    <li><a href="/treatments/face-skin/profhilo.html" data-i18n="treat.profhilo">Profhilo</a></li>
+                    <li><a href="/treatments/face-skin/polynucleotides.html" data-i18n="treat.polynucleotides">Polynucleotides</a></li>
+                    <li><a href="/treatments/face-skin/sculptra.html" data-i18n="treat.sculptra">Sculptra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP &amp; Exosome Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/rf-microneedling.html" data-i18n="treat.rfMicro">Radiofrequency Microneedling</a></li>
+                    <li><a href="/treatments/face-skin/double-chin.html" data-i18n="treat.doubleChin">Double Chin</a></li>
+                    <li><a href="/treatments/face-skin/mesotherapy-fat-tone.html" data-i18n="treat.meso">Mesotherapy for Fat &amp; Tone</a></li>
+                    <li><a href="/treatments/face-skin/jawline-definition.html" data-i18n="treat.jawline">Jawline Definition</a></li>
+                    <li><a href="/treatments/face-skin/filler-dissolving.html" data-i18n="treat.fillerDissolve">Filler Dissolving</a></li>
+                    <li><a href="/treatments/face-skin/corrective-treatments.html" data-i18n="treat.corrective">Corrective Treatments</a></li>
+                    <li><a href="/treatments/face-skin/skin-tags-moles.html" data-i18n="treat.skinTags">Skin Tags &amp; Moles</a></li>
+                    <li><a href="/treatments/face-skin/prp-concentrate.html" data-i18n="treat.prpConc">PRP Concentrate</a></li>
+                    <li><a href="/treatments/face-skin/hair-loss-diagnostics.html" data-i18n="treat.hairLab">Lab Diagnostics for Hair Loss</a></li>
+                    <li><a href="/treatments/face-skin/exosomal-dermapen.html" data-i18n="treat.exosomalDermapen">Exosomal Dermapen</a></li>
+                    <li><a href="/treatments/face-skin/medical-mesotherapy.html" data-i18n="treat.medicalMeso">Medical Mesotherapy</a></li>
+                    <li><a href="/treatments/face-skin/alopecia-areata.html" data-i18n="treat.alopecia">Alopecia Areata</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel active" data-panel="radiant-skin">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Dermapen</a></li>
+                    <li><a href="/treatments/radiant-skin/hydracool.html" data-i18n="treat.hydracool">HydraCool</a></li>
+                    <li><a href="/treatments/radiant-skin/nanofacial.html" data-i18n="treat.nanofacial">NanoFacial</a></li>
+                    <li><a href="/treatments/radiant-skin/vivace-microneedling.html" data-i18n="treat.vivace">Vivace Microneedling</a></li>
+                    <li><a href="/treatments/radiant-skin/hydrafacial.html" data-i18n="treat.hydrafacial">Microdermabrasion/HydraFacial</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/radiant-skin/exosome.html" data-i18n="treat.exosome">Exosome</a></li>
+                    <li><a href="/treatments/radiant-skin/salmon-dna.html" data-i18n="treat.salmonDna">Salmon DNA</a></li>
+                    <li><a href="/treatments/radiant-skin/carboxy-therapy.html" data-i18n="treat.carboxy">Carboxy Therapy</a></li>
+                    <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel" data-panel="body-contouring">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/fat-dissolving.html" data-i18n="treat.fatDissolving">Fat-Dissolving Injections</a></li>
+                    <li><a href="/treatments/body-contouring/btl-exilis.html" data-i18n="treat.btlExilis">BTL Exilis Ultra</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/body-contouring/collagen-stimulators.html" data-i18n="treat.collagenStim">Collagen Stimulators</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mega-panel" data-panel="laser-hair">
+                <div class="mega-col">
+                  <ul>
+                    <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-trigger">
+          <a href="#" id="servicesTrigger" data-i18n="nav.services">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;"></i></a>
+          <div class="mega-menu services-mega" id="servicesMega">
+            <div class="mega-menu-right">
+              <div class="mega-col">
+                <ul>
+                  <li><a href="/services.html" data-i18n="nav.services">All Services</a></li>
+                  <li><hr class="services-divider"></li>
+                  <li><a href="/treatments/face-skin.html" data-i18n="menu.faceSkin">Face &amp; Skin</a></li>
+                  <li><a href="/treatments/radiant-skin.html" data-i18n="menu.radiantSkin">Radiant Skin</a></li>
+                  <li><a href="/treatments/body-contouring.html" data-i18n="menu.bodyContouring">Body Contouring</a></li>
+                  <li><a href="/treatments/laser-hair-removal.html" data-i18n="menu.laserHair">Laser Hair Removal</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+        <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+        <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/96551315007" class="nav-cta" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> <span data-i18n="nav.book">Book Now</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('/assets/images/hero-bg.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="/" data-i18n="breadcrumb.home">Home</a> /
+        <a href="/treatments/face-skin.html" data-i18n="breadcrumb.treatments">Treatments</a> /
+        <span data-i18n="breadcrumb.radiantSkin">Radiant Skin</span>
+      </div>
+      <h1 data-i18n="radiant.pageTitle">Radiant Skin Treatments</h1>
+      <p data-i18n="radiant.pageDesc">Advanced skin rejuvenation treatments designed to restore your skin's natural glow, texture, and vitality.</p>
+    </div>
+  </section>
+
+  <!-- TREATMENTS LIST -->
+  <section class="treatment-list-page section">
+    <div class="container">
+      <div class="treatment-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <!-- Column 1 -->
+        <!-- Dermapen -->
+        <div class="treatment-detail-card" id="dermapen" data-aos="fade-up">
+          <div class="td-img">
+            <img src="/assets/images/treatment-botox.jpg" alt="Dermapen Microneedling" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.dermapen">Dermapen</h3>
+            <p data-i18n="radiant.dermapen.desc">Advanced microneedling for collagen induction, scar revision &amp; skin rejuvenation</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.dermapen.1">Stimulates collagen &amp; elastin production</li>
+              <li data-i18n="radiant.dermapen.2">Reduces fine lines, wrinkles &amp; acne scars</li>
+              <li data-i18n="radiant.dermapen.3">Improves skin texture &amp; tone</li>
+              <li data-i18n="radiant.dermapen.4">Minimal downtime with noticeable results</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- HydraCool -->
+        <div class="treatment-detail-card" id="hydracool" data-aos="fade-up" data-aos-delay="100">
+          <div class="td-img">
+            <img src="/assets/images/treatment-facial.jpg" alt="HydraCool Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.hydracool">HydraCool</h3>
+            <p data-i18n="radiant.hydracool.desc">Cooled hydra-dermabrasion for deep cleansing &amp; hydration</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.hydracool.1">Patented cooled tip for maximum comfort</li>
+              <li data-i18n="radiant.hydracool.2">Deep pore cleansing &amp; extraction</li>
+              <li data-i18n="radiant.hydracool.3">Intense hydration infusion</li>
+              <li data-i18n="radiant.hydracool.4">Reduces redness &amp; inflammation</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NanoFacial -->
+        <div class="treatment-detail-card" id="nanofacial" data-aos="fade-up" data-aos-delay="200">
+          <div class="td-img">
+            <img src="/assets/images/treatment-skin.jpg" alt="NanoFacial Treatment" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.nanofacial">NanoFacial</h3>
+            <p data-i18n="radiant.nanofacial.desc">Nano-infusion facial for intensive skin repair</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.nanofacial.1">Nano-infusion technology for deeper penetration</li>
+              <li data-i18n="radiant.nanofacial.2">Repairs damaged skin barrier</li>
+              <li data-i18n="radiant.nanofacial.3">Brightens &amp; evens skin tone</li>
+              <li data-i18n="radiant.nanofacial.4">Suitable for sensitive skin types</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vivace Microneedling -->
+        <div class="treatment-detail-card" id="vivace" data-aos="fade-up" data-aos-delay="300">
+          <div class="td-img">
+            <img src="/assets/images/treatment-laser.jpg" alt="Vivace Microneedling" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.vivace">Vivace Microneedling</h3>
+            <p data-i18n="radiant.vivace.desc">Radiofrequency microneedling for skin tightening</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.vivace.1">Combines microneedling with radiofrequency energy</li>
+              <li data-i18n="radiant.vivace.2">Tightens loose skin &amp; reduces wrinkles</li>
+              <li data-i18n="radiant.vivace.3">Stimulates natural collagen production</li>
+              <li data-i18n="radiant.vivace.4">Minimal pain with faster recovery</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microdermabrasion/HydraFacial -->
+        <div class="treatment-detail-card" id="hydrafacial" data-aos="fade-up" data-aos-delay="400">
+          <div class="td-img">
+            <img src="/assets/images/treatment-facial.jpg" alt="Microdermabrasion / HydraFacial" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.hydrafacial">Microdermabrasion / HydraFacial</h3>
+            <p data-i18n="radiant.hydrafacial.desc">Gentle exfoliation &amp; deep hydration facial</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.hydrafacial.1">Gentle exfoliation removes dead skin cells</li>
+              <li data-i18n="radiant.hydrafacial.2">Deep hydration &amp; nourishment</li>
+              <li data-i18n="radiant.hydrafacial.3">Improves skin clarity &amp; radiance</li>
+              <li data-i18n="radiant.hydrafacial.4">No downtime, immediate glow</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exosome Therapy -->
+        <div class="treatment-detail-card" id="exosome" data-aos="fade-up" data-aos-delay="500">
+          <div class="td-img">
+            <img src="/assets/images/treatment-botox.jpg" alt="Exosome Therapy" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.exosome">Exosome Therapy</h3>
+            <p data-i18n="radiant.exosome.desc">Advanced regenerative exosome treatment for skin repair</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.exosome.1">Advanced regenerative cell signaling</li>
+              <li data-i18n="radiant.exosome.2">Accelerates skin repair &amp; healing</li>
+              <li data-i18n="radiant.exosome.3">Reduces inflammation &amp; pigmentation</li>
+              <li data-i18n="radiant.exosome.4">Boosts collagen for long-term rejuvenation</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Salmon DNA Therapy -->
+        <div class="treatment-detail-card" id="salmon-dna" data-aos="fade-up" data-aos-delay="600">
+          <div class="td-img">
+            <img src="/assets/images/treatment-skin.jpg" alt="Salmon DNA Therapy" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.salmonDna">Salmon DNA Therapy</h3>
+            <p data-i18n="radiant.salmonDna.desc">Polynucleotide-based skin rejuvenation</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.salmonDna.1">Polynucleotide-based skin regeneration</li>
+              <li data-i18n="radiant.salmonDna.2">Deep hydration &amp; elasticity improvement</li>
+              <li data-i18n="radiant.salmonDna.3">Reduces fine lines &amp; photoaging</li>
+              <li data-i18n="radiant.salmonDna.4">Natural biocompatible ingredients</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carboxy Therapy -->
+        <div class="treatment-detail-card" id="carboxy" data-aos="fade-up" data-aos-delay="700">
+          <div class="td-img">
+            <img src="/assets/images/treatment-facial.jpg" alt="Carboxy Therapy" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.carboxy">Carboxy Therapy</h3>
+            <p data-i18n="radiant.carboxy.desc">CO₂ injections for skin oxygenation &amp; rejuvenation</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.carboxy.1">Medical CO₂ injections for oxygenation</li>
+              <li data-i18n="radiant.carboxy.2">Stimulates blood flow &amp; collagen</li>
+              <li data-i18n="radiant.carboxy.3">Reduces dark circles &amp; under-eye bags</li>
+              <li data-i18n="radiant.carboxy.4">Improves skin firmness &amp; elasticity</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chemical Peels -->
+        <div class="treatment-detail-card" id="chemical-peels" data-aos="fade-up" data-aos-delay="800">
+          <div class="td-img">
+            <img src="/assets/images/treatment-laser.jpg" alt="Chemical Peels" loading="lazy">
+          </div>
+          <div class="td-body">
+            <h3 data-i18n="treat.chemicalPeels">Chemical Peels</h3>
+            <p data-i18n="radiant.chemicalPeels.desc">Professional-grade chemical peels for various skin concerns</p>
+            <ul class="td-list">
+              <li data-i18n="radiant.chemicalPeels.1">Medical-grade peel solutions</li>
+              <li data-i18n="radiant.chemicalPeels.2">Targets acne, pigmentation &amp; aging</li>
+              <li data-i18n="radiant.chemicalPeels.3">Customizable strength &amp; formulation</li>
+              <li data-i18n="radiant.chemicalPeels.4">Reveals fresh, radiant skin</li>
+            </ul>
+            <div class="td-cta">
+              <a href="https://wa.me/96551315007" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="radiant.inquire">Inquire on WhatsApp</span></a>
+              <a href="/#contact"><i class="fas fa-calendar-check"></i> <span data-i18n="radiant.book">Book Now</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section" style="background:var(--green-bg);padding:80px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--font-heading);font-size:clamp(1.6rem,3vw,2.4rem);color:var(--text-dark);margin-bottom:16px;" data-i18n="radiant.cta.title">Not Sure Which Treatment Is Right for You?</h2>
+      <p style="font-size:1rem;color:var(--text-light);max-width:600px;margin:0 auto 32px;" data-i18n="radiant.cta.desc">Book a consultation with our expert dermatologists and we'll create a personalized treatment plan tailored to your skin.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/#contact" class="btn btn-primary" data-i18n="radiant.cta.book">Book a Consultation</a>
+        <a href="https://wa.me/96551315007" class="btn btn-outline" style="color:var(--green);border-color:var(--green);" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="radiant.cta.whatsapp">Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/assets/images/logo.jpg" alt="Al Hilal International Clinic" class="footer-logo">
+          <p data-i18n="footer.desc">Al Hilal International Clinic is a premier dermatology and aesthetic medicine center in Salmiya, Kuwait, offering advanced, safe, and personalized skin and cosmetic treatments.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/alhilal.international_clinic/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/96551315007" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.quick">Quick Links</h4>
+          <ul>
+            <li><a href="/" data-i18n="nav.home">Home</a></li>
+            <li><a href="/#about" data-i18n="nav.about">About</a></li>
+            <li><a href="/services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="/treatments/face-skin.html" data-i18n="nav.treatments">Treatments</a></li>
+            <li><a href="/#specialists" data-i18n="nav.specialists">Specialists</a></li>
+            <li><a href="/#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="/#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.treatments">Treatments</h4>
+          <ul>
+            <li><a href="/treatments/face-skin/botox.html" data-i18n="treat.botox">Botox &amp; Dysport</a></li>
+            <li><a href="/treatments/face-skin/cheeks-lips-temples.html" data-i18n="treat.fillers">Dermal Fillers</a></li>
+            <li><a href="/treatments/laser-hair/laser-hair.html" data-i18n="treat.laserHair">Laser Hair Removal</a></li>
+            <li><a href="/treatments/face-skin/prp-microneedling.html" data-i18n="treat.prpMicro">PRP Therapy</a></li>
+            <li><a href="/treatments/radiant-skin/chemical-peels.html" data-i18n="treat.chemicalPeels">Chemical Peels</a></li>
+            <li><a href="/treatments/radiant-skin/dermapen.html" data-i18n="treat.dermapen">Microneedling</a></li>
+            <li><a href="/treatments/radiant-skin.html" data-i18n="treat.skinRejuv">Skin Rejuvenation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+96551315007">+965 51315007</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/96551315007">WhatsApp</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location.text">Salmiya, Kuwait</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="contact.hours.short">Sat–Thu: 10 AM – 8 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al Hilal International Clinic. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
+        <p class="footer-license">MOH License No: 1337416</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/96551315007" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
